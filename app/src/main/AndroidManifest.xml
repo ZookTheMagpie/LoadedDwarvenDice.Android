@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CharacterSheets"
+            android:name=".CharacterSheetsMenu"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -38,6 +38,7 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
+        <activity android:name=".CharacterSheetActivity"></activity>
     </application>
 
 </manifest>

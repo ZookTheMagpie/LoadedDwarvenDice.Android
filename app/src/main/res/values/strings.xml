@@ -18,4 +18,6 @@
     <string name="title_activity_dice_roller">DiceRoller</string>
     <string name="button_character_sheets">Character Sheets</string>
     <string name="button_dice_roller">Dice Roller</string>
+    <string name="text_view_character_name">Character Name</string>
+    <string name="text_view_player">Player</string>
 </resources>

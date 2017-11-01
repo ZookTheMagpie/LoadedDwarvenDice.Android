@@ -3,7 +3,7 @@ package no.ntnu.hallvardpc.loadeddwarvendice;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class CharacterSheets extends AppCompatActivity {
+public class CharacterSheetActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

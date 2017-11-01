@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void startCharacterSheets()
     {
-        Intent intent = new Intent(this, CharacterSheets.class);
+        Intent intent = new Intent(this, CharacterSheetsMenu.class);
         startActivity(intent);
     }
 
