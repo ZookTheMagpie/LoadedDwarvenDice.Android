@@ -22,4 +22,20 @@
     <string name="text_view_player">Player</string>
     <string name="text_view_class">Class</string>
     <string name="text_view_class_level">Class Level</string>
+    <string name="text_view_Race">Race</string>
+    <string name="text_view_alignment">Alignment</string>
+    <string name="text_view_religion">Religion</string>
+    <string name="text_view_height">Height</string>
+    <string name="text_view_weight">Weight</string>
+    <string name="text_view_gender">Gender</string>
+    <string name="text_view_hair">Hair</string>
+    <string name="text_view_skin">Skin</string>
+    <string name="text_view_eye">Eye Color</string>
+    <string name="text_view_strength">Strength</string>
+    <string name="text_view_dexterity">Dexterity</string>
+    <string name="text_view_constitution">Constitution</string>
+    <string name="text_view_intelligence">Intelligence</string>
+    <string name="text_view_wisdom">Wisdom</string>
+    <string name="text_view_charisma">Charisma</string>
+    <string name="text_view_hit_points"></string>
 </resources>
