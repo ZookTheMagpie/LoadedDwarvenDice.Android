@@ -16,7 +16,7 @@ public class CharacterSheetsMenu extends AppCompatActivity {
         final Button buttonCharacterSheets = (Button) findViewById(R.id.buttontemporary);
         buttonCharacterSheets.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(this, CharacterSheetActivity.class);
+                Intent intent = new Intent(CharacterSheetsMenu.this, CharacterSheetActivity.class);
                 startActivity(intent);
             }
         });

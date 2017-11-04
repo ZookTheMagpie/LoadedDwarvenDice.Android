@@ -23,26 +23,108 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/charactername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/Class"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/border"
+        android:contentDescription="@string/text_view_class"
+        android:padding="5dp"
+        android:text="@string/text_view_class"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/border"
+        android:contentDescription="@string/text_view_class_level"
+        android:padding="5dp"
+        android:text="@string/text_view_class_level"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leveltext"
+        tools:layout_editor_absoluteX="248dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="160dp"
+        android:layout_height="36dp"
         android:layout_marginLeft="16dp"
         android:background="@drawable/border"
         android:contentDescription="@string/text_view_character_name"
         android:padding="5dp"
         android:text="@string/text_view_character_name"
         app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_editor_absoluteY="92dp" />
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <TextView
         android:id="@+id/Player"
-        android:background="@drawable/border"
-        android:padding="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="36dp"
         android:layout_marginRight="16dp"
+        android:background="@drawable/border"
         android:contentDescription="@string/text_view_player"
-        android:text="Player"
+        android:padding="5dp"
+        android:text="@string/text_view_player"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="92dp" />
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/characternametext" />
+
+    <EditText
+        android:id="@+id/characternametext"
+        android:layout_width="117dp"
+        android:layout_height="41dp"
+        android:layout_marginRight="58dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Player Name"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/generalinformation" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="117dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Character Name"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/generalinformation" />
+
+    <EditText
+        android:id="@+id/leveltext"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Level"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Player" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Class"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
 </android.support.constraint.ConstraintLayout>

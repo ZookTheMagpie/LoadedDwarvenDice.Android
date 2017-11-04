@@ -20,4 +20,6 @@
     <string name="button_dice_roller">Dice Roller</string>
     <string name="text_view_character_name">Character Name</string>
     <string name="text_view_player">Player</string>
+    <string name="text_view_class">Class</string>
+    <string name="text_view_class_level">Class Level</string>
 </resources>
