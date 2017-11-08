@@ -50,7 +50,12 @@ public class LoadValues extends AsyncTask<URL, Integer, Map<String,String>>{
                 jr.beginObject();
 
                 String name = jr.nextName();
-                String value = jr.nextString();
+                String value = null;
+                if (name.equals("sSearch"))
+                {
+                    name = "Search";
+                }
+                value = jr.nextString();
                 results.put(name,value);
 
                 jr.endObject();
