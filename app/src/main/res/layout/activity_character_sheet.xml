@@ -10,7 +10,7 @@
         android:layout_width="377dp"
         android:layout_height="506dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -63,14 +63,14 @@
                 android:id="@+id/ACtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginTop="8dp"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="AC"
                 android:textSize="12sp"
-                app:layout_constraintTop_toBottomOf="@+id/hitpointstxt"
                 app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hitpointstxt"
                 tools:layout_editor_absoluteX="8dp" />
 
             <TextView
@@ -598,6 +598,1167 @@
                 android:text="@string/text_view_charisma"
                 app:layout_constraintStart_toEndOf="@id/Charismatxt"
                 app:layout_constraintTop_toBottomOf="@+id/Wisdom" />
+
+            <EditText
+                android:id="@+id/Skills"
+                android:layout_width="347dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Skills"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Charisma" />
+
+            <EditText
+                android:id="@+id/Appraisetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Appraise"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Skills" />
+
+            <TextView
+                android:id="@+id/Appraise"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_appraise"
+                android:padding="5dp"
+                android:text="@string/text_view_appraise"
+                app:layout_constraintStart_toEndOf="@id/Appraisetxt"
+                app:layout_constraintTop_toBottomOf="@+id/Skills" />
+
+            <EditText
+                android:id="@+id/Balancetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Balance"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Appraise" />
+
+            <TextView
+                android:id="@+id/Balance"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_balance"
+                android:padding="5dp"
+                android:text="@string/text_view_balance"
+                app:layout_constraintStart_toEndOf="@id/Balancetxt"
+                app:layout_constraintTop_toBottomOf="@+id/Appraise" />
+
+            <EditText
+                android:id="@+id/Blufftxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Bludd"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Balancetxt" />
+
+            <TextView
+                android:id="@+id/Bluff"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_bluff"
+                android:padding="5dp"
+                android:text="@string/text_view_bluff"
+                app:layout_constraintStart_toEndOf="@id/Blufftxt"
+                app:layout_constraintTop_toBottomOf="@+id/Balance" />
+
+            <EditText
+                android:id="@+id/Climbtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Climb"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Blufftxt" />
+
+            <TextView
+                android:id="@+id/Climb"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_climb"
+                android:padding="5dp"
+                android:text="@string/text_view_climb"
+                app:layout_constraintStart_toEndOf="@id/Climbtxt"
+                app:layout_constraintTop_toBottomOf="@+id/Bluff" />
+
+            <EditText
+                android:id="@+id/Concentrationtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Concentration"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Climbtxt" />
+
+            <TextView
+                android:id="@+id/Concentration"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_concentration"
+                android:padding="5dp"
+                android:text="@string/text_view_concentration"
+                app:layout_constraintStart_toEndOf="@id/Concentrationtxt"
+                app:layout_constraintTop_toBottomOf="@+id/Climb" />
+
+            <EditText
+                android:id="@+id/Crafttxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Craft"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Concentrationtxt" />
+
+            <TextView
+                android:id="@+id/Craft"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_craft"
+                android:padding="5dp"
+                android:text="@string/text_view_craft"
+                app:layout_constraintStart_toEndOf="@id/Crafttxt"
+                app:layout_constraintTop_toBottomOf="@+id/Concentration" />
+
+            <EditText
+                android:id="@+id/DecipherScripttxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Decipher Script"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Crafttxt" />
+
+            <TextView
+                android:id="@+id/DecipherScript"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_decipher_script"
+                android:padding="5dp"
+                android:text="@string/text_view_decipher_script"
+                app:layout_constraintStart_toEndOf="@id/DecipherScripttxt"
+                app:layout_constraintTop_toBottomOf="@+id/Craft" />
+
+            <EditText
+                android:id="@+id/Diplomacytxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Diplomacy"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DecipherScripttxt" />
+
+            <TextView
+                android:id="@+id/Diplomacy"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_diplomacy"
+                android:padding="5dp"
+                android:text="@string/text_view_diplomacy"
+                app:layout_constraintStart_toEndOf="@id/Diplomacytxt"
+                app:layout_constraintTop_toBottomOf="@+id/DecipherScript" />
+
+            <EditText
+                android:id="@+id/DisableDevicetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Disable Device"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Diplomacytxt" />
+
+            <TextView
+                android:id="@+id/DisableDevice"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_disable_device"
+                android:padding="5dp"
+                android:text="@string/text_view_disable_device"
+                app:layout_constraintStart_toEndOf="@id/DisableDevicetxt"
+                app:layout_constraintTop_toBottomOf="@+id/Diplomacy" />
+
+            <EditText
+                android:id="@+id/Disguisetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Disguise"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DisableDevicetxt" />
+
+            <TextView
+                android:id="@+id/Disguise"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_disguise"
+                android:padding="5dp"
+                android:text="@string/text_view_disguise"
+                app:layout_constraintStart_toEndOf="@id/Disguisetxt"
+                app:layout_constraintTop_toBottomOf="@+id/DisableDevice" />
+
+            <EditText
+            android:id="@+id/EscapeArtisttxt"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Escape Artist"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Disguisetxt" />
+
+            <TextView
+                android:id="@+id/EscapeArtist"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_escape_artist"
+                android:padding="5dp"
+                android:text="@string/text_view_escape_artist"
+                app:layout_constraintStart_toEndOf="@id/EscapeArtisttxt"
+                app:layout_constraintTop_toBottomOf="@+id/Disguise" />
+
+            <EditText
+                android:id="@+id/Forgerytxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Forgery"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EscapeArtisttxt" />
+
+            <TextView
+                android:id="@+id/Forgery"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_forgery"
+                android:padding="5dp"
+                android:text="@string/text_view_forgery"
+                app:layout_constraintStart_toEndOf="@id/Forgerytxt"
+                app:layout_constraintTop_toBottomOf="@+id/EscapeArtist" />
+
+            <EditText
+                android:id="@+id/GatherInformationtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Gather Information"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Forgerytxt" />
+
+            <TextView
+                android:id="@+id/GatherInformation"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_gather_information"
+                android:padding="5dp"
+                android:text="@string/text_view_gather_information"
+                app:layout_constraintStart_toEndOf="@id/GatherInformationtxt"
+                app:layout_constraintTop_toBottomOf="@+id/Forgery" />
+
+            <EditText
+                android:id="@+id/HandleAnimaltxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Handle Animal"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/GatherInformationtxt" />
+
+            <TextView
+                android:id="@+id/HandleAnimal"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_handle_animal"
+                android:padding="5dp"
+                android:text="@string/text_view_handle_animal"
+                app:layout_constraintStart_toEndOf="@id/HandleAnimaltxt"
+                app:layout_constraintTop_toBottomOf="@+id/GatherInformation" />
+
+            <EditText
+                android:id="@+id/Healtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Heal"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/HandleAnimaltxt" />
+
+            <TextView
+                android:id="@+id/Heal"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_heal"
+                android:padding="5dp"
+                android:text="@string/text_view_heal"
+                app:layout_constraintStart_toEndOf="@id/Healtxt"
+                app:layout_constraintTop_toBottomOf="@+id/HandleAnimal" />
+
+            <EditText
+                android:id="@+id/Hidetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Hide"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Healtxt" />
+
+            <TextView
+                android:id="@+id/Hide"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_hide"
+                android:padding="5dp"
+                android:text="@string/text_view_hide"
+                app:layout_constraintStart_toEndOf="@id/Hidetxt"
+                app:layout_constraintTop_toBottomOf="@+id/Heal" />
+
+            <EditText
+                android:id="@+id/Intimidatetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Intimidate"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Hidetxt" />
+
+            <TextView
+                android:id="@+id/Intimidate"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_intimidate"
+                android:padding="5dp"
+                android:text="@string/text_view_intimidate"
+                app:layout_constraintStart_toEndOf="@id/Intimidatetxt"
+                app:layout_constraintTop_toBottomOf="@+id/Hide" />
+
+            <EditText
+                android:id="@+id/Jumptxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Jump"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Intimidatetxt" />
+
+            <TextView
+                android:id="@+id/Jump"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_jump"
+                android:padding="5dp"
+                android:text="@string/text_view_jump"
+                app:layout_constraintStart_toEndOf="@id/Jumptxt"
+                app:layout_constraintTop_toBottomOf="@+id/Intimidate" />
+
+            <EditText
+                android:id="@+id/KnowledgeArcanatxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Knowledge Arcana"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Jumptxt" />
+
+            <TextView
+                android:id="@+id/KnowledgeArcana"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_knowledge_arcana"
+                android:padding="5dp"
+                android:text="@string/text_view_knowledge_arcana"
+                app:layout_constraintStart_toEndOf="@id/KnowledgeArcanatxt"
+                app:layout_constraintTop_toBottomOf="@+id/Jump" />
+
+            <EditText
+                android:id="@+id/KnowledgeArchitecturetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Knowledge Architecture"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeArcanatxt" />
+
+            <TextView
+                android:id="@+id/KnowledgeArchitecture"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_knowledge_architecture"
+                android:padding="5dp"
+                android:text="@string/text_view_knowledge_architecture"
+                app:layout_constraintStart_toEndOf="@id/KnowledgeArchitecturetxt"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeArcana" />
+
+            <EditText
+                android:id="@+id/KnowledgeDungeoneeringtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Knowledge Dungeoneering"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeArchitecturetxt" />
+
+            <TextView
+                android:id="@+id/KnowledgeDungeoneering"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_knowledge_dungeoneering"
+                android:padding="5dp"
+                android:text="@string/text_view_knowledge_dungeoneering"
+                app:layout_constraintStart_toEndOf="@id/KnowledgeDungeoneeringtxt"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeArchitecture" />
+
+            <EditText
+                android:id="@+id/KnowledgeGeographytxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Knowledge Geography"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeDungeoneeringtxt" />
+
+            <TextView
+                android:id="@+id/KnowledgeGeography"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_knowledge_geography"
+                android:padding="5dp"
+                android:text="@string/text_view_knowledge_geography"
+                app:layout_constraintStart_toEndOf="@id/KnowledgeGeographytxt"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeDungeoneering" />
+
+            <EditText
+                android:id="@+id/KnowledgeHistorytxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Knowledge History"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeGeographytxt" />
+
+            <TextView
+                android:id="@+id/KnowledgeHistory"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_knowledge_history"
+                android:padding="5dp"
+                android:text="@string/text_view_knowledge_history"
+                app:layout_constraintStart_toEndOf="@id/KnowledgeHistorytxt"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeGeography" />
+
+            <EditText
+                android:id="@+id/KnowledgeLocaltxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Knowledge Local"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeHistorytxt" />
+
+            <TextView
+                android:id="@+id/KnowledgeLocal"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_knowledge_local"
+                android:padding="5dp"
+                android:text="@string/text_view_knowledge_local"
+                app:layout_constraintStart_toEndOf="@id/KnowledgeLocaltxt"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeHistory" />
+
+            <EditText
+                android:id="@+id/KnowledgeNaturetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Knowledge Nature"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeLocaltxt" />
+
+            <TextView
+                android:id="@+id/KnowledgeNature"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_knowledge_nature"
+                android:padding="5dp"
+                android:text="@string/text_view_knowledge_nature"
+                app:layout_constraintStart_toEndOf="@id/KnowledgeNaturetxt"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeLocal" />
+
+            <EditText
+                android:id="@+id/KnowledgeNobilitytxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Knowledge Nobility"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeNaturetxt" />
+
+            <TextView
+                android:id="@+id/KnowledgeNobility"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_knowledge_nobility"
+                android:padding="5dp"
+                android:text="@string/text_view_knowledge_nobility"
+                app:layout_constraintStart_toEndOf="@id/KnowledgeNobilitytxt"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeNature" />
+
+            <EditText
+                android:id="@+id/KnowledgeReligiontxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Knowledge Religion"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeNobilitytxt" />
+
+            <TextView
+                android:id="@+id/KnowledgeReligion"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_knowledge_religion"
+                android:padding="5dp"
+                android:text="@string/text_view_knowledge_religion"
+                app:layout_constraintStart_toEndOf="@id/KnowledgeReligiontxt"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeNobility" />
+
+            <EditText
+                android:id="@+id/KnowledgeThePlanestxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Knowledge The Planes"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeReligiontxt" />
+
+            <TextView
+                android:id="@+id/KnowledgeThePlanes"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_knowledge_the_planes"
+                android:padding="5dp"
+                android:text="@string/text_view_knowledge_the_planes"
+                app:layout_constraintStart_toEndOf="@id/KnowledgeThePlanestxt"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeReligion" />
+
+            <EditText
+                android:id="@+id/Listentxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Listen"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeThePlanestxt" />
+
+            <TextView
+                android:id="@+id/Listen"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_listen"
+                android:padding="5dp"
+                android:text="@string/text_view_ride"
+                app:layout_constraintStart_toEndOf="@id/Listentxt"
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeThePlanes" />
+
+            <EditText
+                android:id="@+id/MoveSilentlytxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Move Silently"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Listentxt" />
+
+            <TextView
+                android:id="@+id/MoveSilently"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_move_silently"
+                android:padding="5dp"
+                android:text="@string/text_view_move_silently"
+                app:layout_constraintStart_toEndOf="@id/MoveSilentlytxt"
+                app:layout_constraintTop_toBottomOf="@+id/Listen" />
+
+            <EditText
+                android:id="@+id/OpenLocktxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Open Lock"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MoveSilentlytxt" />
+
+            <TextView
+                android:id="@+id/OpenLock"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_open_lock"
+                android:padding="5dp"
+                android:text="@string/text_view_open_lock"
+                app:layout_constraintStart_toEndOf="@id/OpenLocktxt"
+                app:layout_constraintTop_toBottomOf="@+id/MoveSilently" />
+
+            <EditText
+                android:id="@+id/Performtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Perform"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/OpenLocktxt" />
+
+            <TextView
+                android:id="@+id/Perform"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_perform"
+                android:padding="5dp"
+                android:text="@string/text_view_perform"
+                app:layout_constraintStart_toEndOf="@id/Performtxt"
+                app:layout_constraintTop_toBottomOf="@+id/OpenLock" />
+
+            <EditText
+                android:id="@+id/Professiontxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Profession"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Performtxt" />
+
+            <TextView
+                android:id="@+id/Profession"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_profession"
+                android:padding="5dp"
+                android:text="@string/text_view_profession"
+                app:layout_constraintStart_toEndOf="@id/Professiontxt"
+                app:layout_constraintTop_toBottomOf="@+id/Perform" />
+
+
+            <EditText
+                android:id="@+id/Ridetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Ride"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Professiontxt" />
+
+            <TextView
+                android:id="@+id/Ride"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_ride"
+                android:padding="5dp"
+                android:text="@string/text_view_ride"
+                app:layout_constraintStart_toEndOf="@id/Ridetxt"
+                app:layout_constraintTop_toBottomOf="@+id/Profession" />
+
+            <EditText
+                android:id="@+id/Searchtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Search"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Ridetxt" />
+
+            <TextView
+                android:id="@+id/Search"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_search"
+                android:padding="5dp"
+                android:text="@string/text_view_search"
+                app:layout_constraintStart_toEndOf="@id/Searchtxt"
+                app:layout_constraintTop_toBottomOf="@+id/Ride" />
+
+            <EditText
+                android:id="@+id/SenseMotivetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Sense Motive"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Searchtxt" />
+
+            <TextView
+                android:id="@+id/SenseMotive"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_sense_motive"
+                android:padding="5dp"
+                android:text="@string/text_view_sense_motive"
+                app:layout_constraintStart_toEndOf="@id/SenseMotivetxt"
+                app:layout_constraintTop_toBottomOf="@+id/Search" />
+
+            <EditText
+                android:id="@+id/SleightOfHandtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Sleight of Hand"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SenseMotivetxt" />
+
+            <TextView
+                android:id="@+id/SleightOfHand"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_sleight_of_hand"
+                android:padding="5dp"
+                android:text="@string/text_view_sleight_of_hand"
+                app:layout_constraintStart_toEndOf="@id/SleightOfHandtxt"
+                app:layout_constraintTop_toBottomOf="@+id/SenseMotive" />
+
+            <EditText
+                android:id="@+id/Spellcrafttxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Spellcraft"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SleightOfHandtxt" />
+
+            <TextView
+                android:id="@+id/Spellcraft"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_spellcraft"
+                android:padding="5dp"
+                android:text="@string/text_view_spellcraft"
+                app:layout_constraintStart_toEndOf="@id/Spellcrafttxt"
+                app:layout_constraintTop_toBottomOf="@+id/SleightOfHand" />
+
+            <EditText
+                android:id="@+id/Spottxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Spot"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Spellcrafttxt" />
+
+            <TextView
+                android:id="@+id/Spot"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_spot"
+                android:padding="5dp"
+                android:text="@string/text_view_spot"
+                app:layout_constraintStart_toEndOf="@id/Spottxt"
+                app:layout_constraintTop_toBottomOf="@+id/Spellcraft" />
+
+            <EditText
+                android:id="@+id/Survivaltxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Survival"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Spottxt" />
+
+            <TextView
+                android:id="@+id/Survival"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_survival"
+                android:padding="5dp"
+                android:text="@string/text_view_survival"
+                app:layout_constraintStart_toEndOf="@id/Survivaltxt"
+                app:layout_constraintTop_toBottomOf="@+id/Spot" />
+
+            <EditText
+                android:id="@+id/Swimtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Swim"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Survivaltxt" />
+
+            <TextView
+                android:id="@+id/Swim"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_swim"
+                android:padding="5dp"
+                android:text="@string/text_view_swim"
+                app:layout_constraintStart_toEndOf="@id/Swimtxt"
+                app:layout_constraintTop_toBottomOf="@+id/Survival" />
+
+            <EditText
+                android:id="@+id/Tumbletxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Tumble"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Swimtxt" />
+
+            <TextView
+                android:id="@+id/Tumble"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_tumble"
+                android:padding="5dp"
+                android:text="@string/text_view_tumble"
+                app:layout_constraintStart_toEndOf="@id/Tumbletxt"
+                app:layout_constraintTop_toBottomOf="@+id/Swim" />
+
+            <EditText
+                android:id="@+id/UseMagicDevicetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Use Magic Device"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Tumbletxt" />
+
+            <TextView
+                android:id="@+id/UseMagicDevice"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_use_magic_device"
+                android:padding="5dp"
+                android:text="@string/text_view_use_magic_device"
+                app:layout_constraintStart_toEndOf="@id/UseMagicDevicetxt"
+                app:layout_constraintTop_toBottomOf="@+id/Tumble" />
+
+            <EditText
+                android:id="@+id/UseRopetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Use Rope"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/UseMagicDevicetxt" />
+
+            <TextView
+                android:id="@+id/UseRope"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_use_rope"
+                android:padding="5dp"
+                android:text="@string/text_view_use_rope"
+                app:layout_constraintStart_toEndOf="@id/UseRopetxt"
+                app:layout_constraintTop_toBottomOf="@+id/UseMagicDevice" />
+
+
+
+
 
 
         </android.support.constraint.ConstraintLayout>
