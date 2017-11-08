@@ -21,7 +21,7 @@
             android:layout_height="match_parent"
             android:minHeight="40dp">
 
-            <EditText
+            <TextView
                 android:id="@+id/Skintxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -34,7 +34,7 @@
                 app:layout_constraintStart_toEndOf="@+id/hairtxt"
                 app:layout_constraintTop_toBottomOf="@+id/race" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Eyetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -47,7 +47,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/gender" />
 
-            <EditText
+            <TextView
                 android:id="@+id/hitpointstxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -60,7 +60,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/eye"
                 tools:layout_editor_absoluteY="663dp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/ACtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -74,11 +74,12 @@
                 app:layout_constraintTop_toBottomOf="@+id/hitpointstxt"
                 tools:layout_editor_absoluteX="8dp" />
 
-            <TextView
+            <EditText
                 android:id="@+id/AC"
                 android:layout_width="50dp"
                 android:layout_height="36dp"
                 android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_hit_points"
                 android:padding="5dp"
@@ -87,7 +88,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/hitpointstxt"
                 tools:layout_editor_absoluteY="663dp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/hairtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -100,7 +101,7 @@
                 app:layout_constraintStart_toEndOf="@+id/gendertxt"
                 app:layout_constraintTop_toBottomOf="@+id/weight" />
 
-            <EditText
+            <TextView
                 android:id="@+id/gendertxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -113,19 +114,21 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/height" />
 
-            <TextView
+            <EditText
                 android:id="@+id/HitPoints"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_hit_points"
                 android:padding="5dp"
                 android:text="@string/text_view_hit_points"
                 app:layout_constraintStart_toEndOf="@+id/hitpointstxt"
+                app:layout_constraintTop_toBottomOf="@+id/eye"
                 tools:layout_editor_absoluteY="663dp" />
 
-            <TextView
+            <EditText
                 android:id="@+id/eye"
                 android:layout_width="102dp"
                 android:layout_height="36dp"
@@ -137,7 +140,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Eyetxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/skin"
                 android:layout_width="102dp"
                 android:layout_height="36dp"
@@ -149,7 +152,7 @@
                 app:layout_constraintStart_toEndOf="@+id/hair"
                 app:layout_constraintTop_toBottomOf="@+id/Skintxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/hair"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -161,7 +164,7 @@
                 app:layout_constraintStart_toEndOf="@+id/gender"
                 app:layout_constraintTop_toBottomOf="@+id/Skintxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/gender"
                 android:layout_width="100dp"
                 android:layout_height="35dp"
@@ -175,7 +178,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/gendertxt" />
 
-            <EditText
+            <TextView
                 android:id="@+id/generalinformation2"
                 android:layout_width="354dp"
                 android:layout_height="0dp"
@@ -191,7 +194,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
+            <TextView
                 android:id="@+id/characterNametxt"
                 android:layout_width="118dp"
                 android:layout_height="41dp"
@@ -204,7 +207,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/generalinformation2" />
 
-            <TextView
+            <EditText
                 android:id="@+id/characterName"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
@@ -216,7 +219,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/characterNametxt" />
 
-            <EditText
+            <TextView
                 android:id="@+id/playertxt"
                 android:layout_width="83dp"
                 android:layout_height="41dp"
@@ -229,7 +232,7 @@
                 app:layout_constraintStart_toEndOf="@+id/characterName"
                 app:layout_constraintTop_toBottomOf="@+id/generalinformation2" />
 
-            <TextView
+            <EditText
                 android:id="@+id/player"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
@@ -241,7 +244,7 @@
                 app:layout_constraintStart_toEndOf="@+id/characterName"
                 app:layout_constraintTop_toBottomOf="@+id/playertxt" />
 
-            <EditText
+            <TextView
                 android:id="@+id/classtxt"
                 android:layout_width="53dp"
                 android:layout_height="35dp"
@@ -254,7 +257,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/characterName" />
 
-            <TextView
+            <EditText
                 android:id="@+id/class1"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
@@ -262,11 +265,11 @@
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_class"
                 android:padding="5dp"
-                android:text="@string/text_view_class"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/classtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/classtxt"
+                tools:text="@string/text_view_class" />
 
-            <EditText
+            <TextView
                 android:id="@+id/classLeveltxt"
                 android:layout_width="109dp"
                 android:layout_height="35dp"
@@ -279,7 +282,7 @@
                 app:layout_constraintStart_toEndOf="@+id/class1"
                 app:layout_constraintTop_toBottomOf="@+id/characterName" />
 
-            <TextView
+            <EditText
                 android:id="@+id/classLevel"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
@@ -291,7 +294,7 @@
                 app:layout_constraintStart_toEndOf="@+id/class1"
                 app:layout_constraintTop_toBottomOf="@+id/classLeveltxt" />
 
-            <EditText
+            <TextView
                 android:id="@+id/alignmenttxt"
                 android:layout_width="107dp"
                 android:layout_height="35dp"
@@ -304,7 +307,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/class1" />
 
-            <TextView
+            <EditText
                 android:id="@+id/alignment"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
@@ -316,7 +319,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/alignmenttxt" />
 
-            <EditText
+            <TextView
                 android:id="@+id/religiontxt"
                 android:layout_width="78dp"
                 android:layout_height="35dp"
@@ -329,7 +332,7 @@
                 app:layout_constraintStart_toEndOf="@+id/alignment"
                 app:layout_constraintTop_toBottomOf="@+id/classLevel" />
 
-            <TextView
+            <EditText
                 android:id="@+id/religion"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
@@ -341,7 +344,7 @@
                 app:layout_constraintStart_toEndOf="@+id/alignment"
                 app:layout_constraintTop_toBottomOf="@+id/religiontxt" />
 
-            <EditText
+            <TextView
                 android:id="@+id/characterDexription"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -356,7 +359,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/religion"
                 tools:layout_editor_absoluteY="328dp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/heighttxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -369,7 +372,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/characterDexription" />
 
-            <TextView
+            <EditText
                 android:id="@+id/height"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -383,7 +386,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/heighttxt" />
 
-            <EditText
+            <TextView
                 android:id="@+id/weighttxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -396,7 +399,7 @@
                 app:layout_constraintStart_toEndOf="@+id/height"
                 app:layout_constraintTop_toBottomOf="@+id/characterDexription" />
 
-            <TextView
+            <EditText
                 android:id="@+id/weight"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -408,7 +411,7 @@
                 app:layout_constraintStart_toEndOf="@+id/height"
                 app:layout_constraintTop_toBottomOf="@+id/weighttxt" />
 
-            <EditText
+            <TextView
                 android:id="@+id/racetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -421,7 +424,7 @@
                 app:layout_constraintStart_toEndOf="@+id/weight"
                 app:layout_constraintTop_toBottomOf="@+id/characterDexription" />
 
-            <TextView
+            <EditText
                 android:id="@+id/race"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -433,7 +436,7 @@
                 app:layout_constraintStart_toEndOf="@+id/weight"
                 app:layout_constraintTop_toBottomOf="@+id/racetxt" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Abilities"
                 android:layout_width="347dp"
                 android:layout_height="wrap_content"
@@ -445,7 +448,7 @@
                 app:layout_constraintTop_toBottomOf="@id/ACtxt"
                 tools:layout_editor_absoluteY="809dp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Strengthtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -458,7 +461,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Abilities" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Strength"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -471,7 +474,7 @@
                 app:layout_constraintStart_toEndOf="@id/Strengthtxt"
                 app:layout_constraintTop_toBottomOf="@+id/Abilities" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Dexteritytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -484,7 +487,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Strengthtxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Dexterity"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -497,7 +500,7 @@
                 app:layout_constraintStart_toEndOf="@id/Dexteritytxt"
                 app:layout_constraintTop_toBottomOf="@+id/Strength" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Constitutiontxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -510,7 +513,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Dexteritytxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Constitution"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -523,7 +526,7 @@
                 app:layout_constraintStart_toEndOf="@id/Constitutiontxt"
                 app:layout_constraintTop_toBottomOf="@+id/Dexterity" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Intelligencetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -536,7 +539,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Constitutiontxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Intelligence"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -549,7 +552,7 @@
                 app:layout_constraintStart_toEndOf="@id/Intelligencetxt"
                 app:layout_constraintTop_toBottomOf="@+id/Constitution" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Wisdomtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -562,7 +565,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Intelligencetxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Wisdom"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -575,7 +578,7 @@
                 app:layout_constraintStart_toEndOf="@id/Wisdomtxt"
                 app:layout_constraintTop_toBottomOf="@+id/Intelligence" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Charismatxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -588,7 +591,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Wisdomtxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Charisma"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -601,7 +604,7 @@
                 app:layout_constraintStart_toEndOf="@id/Charismatxt"
                 app:layout_constraintTop_toBottomOf="@+id/Wisdom" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Skills"
                 android:layout_width="347dp"
                 android:layout_height="wrap_content"
@@ -613,7 +616,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Charisma" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Appraisetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -626,7 +629,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Skills" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Appraise"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -639,7 +642,7 @@
                 app:layout_constraintStart_toEndOf="@id/Appraisetxt"
                 app:layout_constraintTop_toBottomOf="@+id/Skills" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Balancetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -652,7 +655,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Appraise" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Balance"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -665,7 +668,7 @@
                 app:layout_constraintStart_toEndOf="@id/Balancetxt"
                 app:layout_constraintTop_toBottomOf="@+id/Appraise" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Blufftxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -678,7 +681,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Balancetxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Bluff"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -691,7 +694,7 @@
                 app:layout_constraintStart_toEndOf="@id/Blufftxt"
                 app:layout_constraintTop_toBottomOf="@+id/Balance" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Climbtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -704,7 +707,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Blufftxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Climb"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -717,7 +720,7 @@
                 app:layout_constraintStart_toEndOf="@id/Climbtxt"
                 app:layout_constraintTop_toBottomOf="@+id/Bluff" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Concentrationtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -730,7 +733,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Climbtxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Concentration"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -743,7 +746,7 @@
                 app:layout_constraintStart_toEndOf="@id/Concentrationtxt"
                 app:layout_constraintTop_toBottomOf="@+id/Climb" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Crafttxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -756,7 +759,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Concentrationtxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Craft"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -769,7 +772,7 @@
                 app:layout_constraintStart_toEndOf="@id/Crafttxt"
                 app:layout_constraintTop_toBottomOf="@+id/Concentration" />
 
-            <EditText
+            <TextView
                 android:id="@+id/DecipherScripttxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -782,7 +785,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Crafttxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/DecipherScript"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -795,7 +798,7 @@
                 app:layout_constraintStart_toEndOf="@id/DecipherScripttxt"
                 app:layout_constraintTop_toBottomOf="@+id/Craft" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Diplomacytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -808,7 +811,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/DecipherScripttxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Diplomacy"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -821,7 +824,7 @@
                 app:layout_constraintStart_toEndOf="@id/Diplomacytxt"
                 app:layout_constraintTop_toBottomOf="@+id/DecipherScript" />
 
-            <EditText
+            <TextView
                 android:id="@+id/DisableDevicetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -834,7 +837,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Diplomacytxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/DisableDevice"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -847,7 +850,7 @@
                 app:layout_constraintStart_toEndOf="@id/DisableDevicetxt"
                 app:layout_constraintTop_toBottomOf="@+id/Diplomacy" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Disguisetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -860,7 +863,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/DisableDevicetxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Disguise"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -873,7 +876,7 @@
                 app:layout_constraintStart_toEndOf="@id/Disguisetxt"
                 app:layout_constraintTop_toBottomOf="@+id/DisableDevice" />
 
-            <EditText
+            <TextView
             android:id="@+id/EscapeArtisttxt"
             android:layout_width="100dp"
             android:layout_height="36dp"
@@ -886,7 +889,7 @@
             app:layout_constraintStart_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Disguisetxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/EscapeArtist"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -899,7 +902,7 @@
                 app:layout_constraintStart_toEndOf="@id/EscapeArtisttxt"
                 app:layout_constraintTop_toBottomOf="@+id/Disguise" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Forgerytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -912,7 +915,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EscapeArtisttxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Forgery"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -925,7 +928,7 @@
                 app:layout_constraintStart_toEndOf="@id/Forgerytxt"
                 app:layout_constraintTop_toBottomOf="@+id/EscapeArtist" />
 
-            <EditText
+            <TextView
                 android:id="@+id/GatherInformationtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -938,7 +941,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Forgerytxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/GatherInformation"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -951,7 +954,7 @@
                 app:layout_constraintStart_toEndOf="@id/GatherInformationtxt"
                 app:layout_constraintTop_toBottomOf="@+id/Forgery" />
 
-            <EditText
+            <TextView
                 android:id="@+id/HandleAnimaltxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -964,7 +967,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/GatherInformationtxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/HandleAnimal"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -977,7 +980,7 @@
                 app:layout_constraintStart_toEndOf="@id/HandleAnimaltxt"
                 app:layout_constraintTop_toBottomOf="@+id/GatherInformation" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Healtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -990,7 +993,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/HandleAnimaltxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Heal"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1003,7 +1006,7 @@
                 app:layout_constraintStart_toEndOf="@id/Healtxt"
                 app:layout_constraintTop_toBottomOf="@+id/HandleAnimal" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Hidetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1016,7 +1019,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Healtxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Hide"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1029,7 +1032,7 @@
                 app:layout_constraintStart_toEndOf="@id/Hidetxt"
                 app:layout_constraintTop_toBottomOf="@+id/Heal" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Intimidatetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1042,7 +1045,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Hidetxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Intimidate"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1055,7 +1058,7 @@
                 app:layout_constraintStart_toEndOf="@id/Intimidatetxt"
                 app:layout_constraintTop_toBottomOf="@+id/Hide" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Jumptxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1068,7 +1071,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Intimidatetxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Jump"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1081,7 +1084,7 @@
                 app:layout_constraintStart_toEndOf="@id/Jumptxt"
                 app:layout_constraintTop_toBottomOf="@+id/Intimidate" />
 
-            <EditText
+            <TextView
                 android:id="@+id/KnowledgeArcanatxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1094,7 +1097,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Jumptxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/KnowledgeArcana"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1107,7 +1110,7 @@
                 app:layout_constraintStart_toEndOf="@id/KnowledgeArcanatxt"
                 app:layout_constraintTop_toBottomOf="@+id/Jump" />
 
-            <EditText
+            <TextView
                 android:id="@+id/KnowledgeArchitecturetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1120,7 +1123,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeArcanatxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/KnowledgeArchitecture"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1133,7 +1136,7 @@
                 app:layout_constraintStart_toEndOf="@id/KnowledgeArchitecturetxt"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeArcana" />
 
-            <EditText
+            <TextView
                 android:id="@+id/KnowledgeDungeoneeringtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1146,7 +1149,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeArchitecturetxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/KnowledgeDungeoneering"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1159,7 +1162,7 @@
                 app:layout_constraintStart_toEndOf="@id/KnowledgeDungeoneeringtxt"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeArchitecture" />
 
-            <EditText
+            <TextView
                 android:id="@+id/KnowledgeGeographytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1172,7 +1175,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeDungeoneeringtxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/KnowledgeGeography"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1185,7 +1188,7 @@
                 app:layout_constraintStart_toEndOf="@id/KnowledgeGeographytxt"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeDungeoneering" />
 
-            <EditText
+            <TextView
                 android:id="@+id/KnowledgeHistorytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1198,7 +1201,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeGeographytxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/KnowledgeHistory"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1211,7 +1214,7 @@
                 app:layout_constraintStart_toEndOf="@id/KnowledgeHistorytxt"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeGeography" />
 
-            <EditText
+            <TextView
                 android:id="@+id/KnowledgeLocaltxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1224,7 +1227,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeHistorytxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/KnowledgeLocal"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1237,7 +1240,7 @@
                 app:layout_constraintStart_toEndOf="@id/KnowledgeLocaltxt"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeHistory" />
 
-            <EditText
+            <TextView
                 android:id="@+id/KnowledgeNaturetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1250,7 +1253,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeLocaltxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/KnowledgeNature"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1263,7 +1266,7 @@
                 app:layout_constraintStart_toEndOf="@id/KnowledgeNaturetxt"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeLocal" />
 
-            <EditText
+            <TextView
                 android:id="@+id/KnowledgeNobilitytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1276,7 +1279,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeNaturetxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/KnowledgeNobility"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1289,7 +1292,7 @@
                 app:layout_constraintStart_toEndOf="@id/KnowledgeNobilitytxt"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeNature" />
 
-            <EditText
+            <TextView
                 android:id="@+id/KnowledgeReligiontxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1302,7 +1305,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeNobilitytxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/KnowledgeReligion"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1315,7 +1318,7 @@
                 app:layout_constraintStart_toEndOf="@id/KnowledgeReligiontxt"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeNobility" />
 
-            <EditText
+            <TextView
                 android:id="@+id/KnowledgeThePlanestxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1328,7 +1331,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeReligiontxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/KnowledgeThePlanes"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1341,7 +1344,7 @@
                 app:layout_constraintStart_toEndOf="@id/KnowledgeThePlanestxt"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeReligion" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Listentxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1354,7 +1357,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeThePlanestxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Listen"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1367,7 +1370,7 @@
                 app:layout_constraintStart_toEndOf="@id/Listentxt"
                 app:layout_constraintTop_toBottomOf="@+id/KnowledgeThePlanes" />
 
-            <EditText
+            <TextView
                 android:id="@+id/MoveSilentlytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1380,7 +1383,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Listentxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/MoveSilently"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1393,7 +1396,7 @@
                 app:layout_constraintStart_toEndOf="@id/MoveSilentlytxt"
                 app:layout_constraintTop_toBottomOf="@+id/Listen" />
 
-            <EditText
+            <TextView
                 android:id="@+id/OpenLocktxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1406,7 +1409,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/MoveSilentlytxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/OpenLock"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1419,7 +1422,7 @@
                 app:layout_constraintStart_toEndOf="@id/OpenLocktxt"
                 app:layout_constraintTop_toBottomOf="@+id/MoveSilently" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Performtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1432,7 +1435,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/OpenLocktxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Perform"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1445,7 +1448,7 @@
                 app:layout_constraintStart_toEndOf="@id/Performtxt"
                 app:layout_constraintTop_toBottomOf="@+id/OpenLock" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Professiontxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1458,7 +1461,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Performtxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Profession"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1472,7 +1475,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/Perform" />
 
 
-            <EditText
+            <TextView
                 android:id="@+id/Ridetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1485,7 +1488,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Professiontxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Ride"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1498,7 +1501,7 @@
                 app:layout_constraintStart_toEndOf="@id/Ridetxt"
                 app:layout_constraintTop_toBottomOf="@+id/Profession" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Searchtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1511,7 +1514,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Ridetxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Search"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1524,7 +1527,7 @@
                 app:layout_constraintStart_toEndOf="@id/Searchtxt"
                 app:layout_constraintTop_toBottomOf="@+id/Ride" />
 
-            <EditText
+            <TextView
                 android:id="@+id/SenseMotivetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1537,7 +1540,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Searchtxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/SenseMotive"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1550,7 +1553,7 @@
                 app:layout_constraintStart_toEndOf="@id/SenseMotivetxt"
                 app:layout_constraintTop_toBottomOf="@+id/Search" />
 
-            <EditText
+            <TextView
                 android:id="@+id/SleightOfHandtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1563,7 +1566,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SenseMotivetxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/SleightOfHand"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1576,7 +1579,7 @@
                 app:layout_constraintStart_toEndOf="@id/SleightOfHandtxt"
                 app:layout_constraintTop_toBottomOf="@+id/SenseMotive" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Spellcrafttxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1589,7 +1592,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SleightOfHandtxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Spellcraft"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1602,7 +1605,7 @@
                 app:layout_constraintStart_toEndOf="@id/Spellcrafttxt"
                 app:layout_constraintTop_toBottomOf="@+id/SleightOfHand" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Spottxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1615,7 +1618,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Spellcrafttxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Spot"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1628,7 +1631,7 @@
                 app:layout_constraintStart_toEndOf="@id/Spottxt"
                 app:layout_constraintTop_toBottomOf="@+id/Spellcraft" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Survivaltxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1641,7 +1644,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Spottxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Survival"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1654,7 +1657,7 @@
                 app:layout_constraintStart_toEndOf="@id/Survivaltxt"
                 app:layout_constraintTop_toBottomOf="@+id/Spot" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Swimtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1667,7 +1670,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Survivaltxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Swim"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1680,7 +1683,7 @@
                 app:layout_constraintStart_toEndOf="@id/Swimtxt"
                 app:layout_constraintTop_toBottomOf="@+id/Survival" />
 
-            <EditText
+            <TextView
                 android:id="@+id/Tumbletxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1693,7 +1696,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Swimtxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/Tumble"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1706,7 +1709,7 @@
                 app:layout_constraintStart_toEndOf="@id/Tumbletxt"
                 app:layout_constraintTop_toBottomOf="@+id/Swim" />
 
-            <EditText
+            <TextView
                 android:id="@+id/UseMagicDevicetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1719,7 +1722,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Tumbletxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/UseMagicDevice"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
@@ -1732,7 +1735,7 @@
                 app:layout_constraintStart_toEndOf="@id/UseMagicDevicetxt"
                 app:layout_constraintTop_toBottomOf="@+id/Tumble" />
 
-            <EditText
+            <TextView
                 android:id="@+id/UseRopetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
@@ -1745,7 +1748,7 @@
                 app:layout_constraintStart_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/UseMagicDevicetxt" />
 
-            <TextView
+            <EditText
                 android:id="@+id/UseRope"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
