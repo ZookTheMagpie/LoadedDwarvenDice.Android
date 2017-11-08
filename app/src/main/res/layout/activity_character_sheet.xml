@@ -260,7 +260,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/characterName" />
 
             <EditText
-                android:id="@+id/class1"
+                android:id="@+id/cClass"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
                 android:layout_marginLeft="16dp"
@@ -281,7 +281,7 @@
                 android:inputType="textPersonName"
                 android:hint="Level"
                 android:textSize="12sp"
-                app:layout_constraintStart_toEndOf="@+id/class1"
+                app:layout_constraintStart_toEndOf="@+id/cClass"
                 app:layout_constraintTop_toBottomOf="@+id/characterName" />
 
             <EditText
@@ -293,7 +293,7 @@
                 android:contentDescription="@string/text_view_class_level"
                 android:padding="5dp"
                 android:hint="@string/text_view_class_level"
-                app:layout_constraintStart_toEndOf="@+id/class1"
+                app:layout_constraintStart_toEndOf="@+id/cClass"
                 app:layout_constraintTop_toBottomOf="@+id/classLeveltxt" />
 
             <TextView
@@ -307,7 +307,7 @@
                 android:hint="Alignment"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/class1" />
+                app:layout_constraintTop_toBottomOf="@+id/cClass" />
 
             <EditText
                 android:id="@+id/alignment"
@@ -347,7 +347,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/religiontxt" />
 
             <TextView
-                android:id="@+id/characterDexription"
+                android:id="@+id/characterDescription"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginEnd="16dp"
@@ -372,7 +372,7 @@
                 android:hint="Height"
                 android:textSize="12sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/characterDexription" />
+                app:layout_constraintTop_toBottomOf="@+id/characterDescription" />
 
             <EditText
                 android:id="@+id/height"
@@ -399,7 +399,7 @@
                 android:hint="Weight"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/height"
-                app:layout_constraintTop_toBottomOf="@+id/characterDexription" />
+                app:layout_constraintTop_toBottomOf="@+id/characterDescription" />
 
             <EditText
                 android:id="@+id/weight"
@@ -424,7 +424,7 @@
                 android:hint="Race"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/weight"
-                app:layout_constraintTop_toBottomOf="@+id/characterDexription" />
+                app:layout_constraintTop_toBottomOf="@+id/characterDescription" />
 
             <EditText
                 android:id="@+id/race"

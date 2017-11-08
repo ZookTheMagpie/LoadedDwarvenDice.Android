@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -49,19 +50,8 @@ public class LoadValues extends AsyncTask<URL, Integer, Map<String,String>>{
                 jr.beginObject();
 
                 String name = jr.nextName();
-                String value = null;
-                if( name.equals("skills"))
-                {
-
-                }
-                else {
-                    value = jr.nextString();
-                }
+                String value = jr.nextString();
                 results.put(name,value);
-
-
-
-
 
                 jr.endObject();
             }
@@ -75,11 +65,11 @@ public class LoadValues extends AsyncTask<URL, Integer, Map<String,String>>{
     }
 
     @Override
-    protected void onPostExecute(Map<String,String> messages)
+    protected void onPostExecute(Map<String,String> values)
     {
         if (callback != null)
         {
-            callback.onPostExecute(messages);
+            callback.onPostExecute(values);
         }
     }
 }
