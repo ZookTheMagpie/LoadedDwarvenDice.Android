@@ -6,125 +6,602 @@
     android:layout_height="match_parent"
     tools:context="no.ntnu.hallvardpc.loadeddwarvendice.CharacterSheetActivity">
 
-    <EditText
-        android:id="@+id/generalinformation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:singleLine="false"
-        android:text="General Information"
-        app:layout_constraintHorizontal_bias="0.5"
+    <ScrollView
+        android:layout_width="377dp"
+        android:layout_height="506dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
-    <TextView
-        android:id="@+id/Class"
-        android:layout_width="100dp"
-        android:layout_height="36dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/border"
-        android:contentDescription="@string/text_view_class"
-        android:padding="5dp"
-        android:text="@string/text_view_class"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="40dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="100dp"
-        android:layout_height="36dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/border"
-        android:contentDescription="@string/text_view_class_level"
-        android:padding="5dp"
-        android:text="@string/text_view_class_level"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/leveltext"
-        tools:layout_editor_absoluteX="248dp" />
+            <EditText
+                android:id="@+id/Skintxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Skin"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/hairtxt"
+                app:layout_constraintTop_toBottomOf="@+id/race" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="160dp"
-        android:layout_height="36dp"
-        android:layout_marginLeft="16dp"
-        android:background="@drawable/border"
-        android:contentDescription="@string/text_view_character_name"
-        android:padding="5dp"
-        android:text="@string/text_view_character_name"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+            <EditText
+                android:id="@+id/Eyetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Eye Color"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gender" />
 
-    <TextView
-        android:id="@+id/Player"
-        android:layout_width="160dp"
-        android:layout_height="36dp"
-        android:layout_marginRight="16dp"
-        android:background="@drawable/border"
-        android:contentDescription="@string/text_view_player"
-        android:padding="5dp"
-        android:text="@string/text_view_player"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/characternametext" />
+            <EditText
+                android:id="@+id/hitpointstxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Hit Points"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="665dp" />
 
-    <EditText
-        android:id="@+id/characternametext"
-        android:layout_width="117dp"
-        android:layout_height="41dp"
-        android:layout_marginRight="58dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Player Name"
-        android:textSize="12sp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/generalinformation" />
+            <EditText
+                android:id="@+id/ACtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="AC"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/hitpointstxt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteX="8dp" />
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="117dp"
-        android:layout_height="41dp"
-        android:layout_marginLeft="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Character Name"
-        android:textSize="12sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/generalinformation" />
+            <TextView
+                android:id="@+id/AC"
+                android:layout_width="50dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_hit_points"
+                android:padding="5dp"
+                android:text="@string/text_view_hit_points"
+                app:layout_constraintStart_toEndOf="@+id/ACtxt"
+                app:layout_constraintTop_toBottomOf="@+id/hitpointstxt"
+                tools:layout_editor_absoluteY="663dp" />
 
-    <EditText
-        android:id="@+id/leveltext"
-        android:layout_width="100dp"
-        android:layout_height="32dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Level"
-        android:textSize="12sp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Player" />
+            <EditText
+                android:id="@+id/hairtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Hair"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/gendertxt"
+                app:layout_constraintTop_toBottomOf="@+id/weight" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="100dp"
-        android:layout_height="32dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Class"
-        android:textSize="12sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            <EditText
+                android:id="@+id/gendertxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Gender"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/height" />
+
+            <TextView
+                android:id="@+id/HitPoints"
+                android:layout_width="200dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_hit_points"
+                android:padding="5dp"
+                android:text="@string/text_view_hit_points"
+                app:layout_constraintStart_toEndOf="@+id/hitpointstxt"
+                tools:layout_editor_absoluteY="663dp" />
+
+            <TextView
+                android:id="@+id/eye"
+                android:layout_width="102dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_eye"
+                android:padding="5dp"
+                android:text="@string/text_view_eye"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Eyetxt" />
+
+            <TextView
+                android:id="@+id/skin"
+                android:layout_width="102dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_skin"
+                android:padding="5dp"
+                android:text="@string/text_view_skin"
+                app:layout_constraintStart_toEndOf="@+id/hair"
+                app:layout_constraintTop_toBottomOf="@+id/Skintxt" />
+
+            <TextView
+                android:id="@+id/hair"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_hair"
+                android:padding="5dp"
+                android:text="@string/text_view_hair"
+                app:layout_constraintStart_toEndOf="@+id/gender"
+                app:layout_constraintTop_toBottomOf="@+id/Skintxt" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_gender"
+                android:padding="5dp"
+                android:text="@string/text_view_gender"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gendertxt" />
+
+            <EditText
+                android:id="@+id/generalinformation2"
+                android:layout_width="354dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:singleLine="false"
+                android:text="General Information"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/characterNametxt"
+                android:layout_width="118dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Character Name"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/generalinformation2" />
+
+            <TextView
+                android:id="@+id/characterName"
+                android:layout_width="150dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_character_name"
+                android:padding="5dp"
+                android:text="@string/text_view_character_name"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/characterNametxt" />
+
+            <EditText
+                android:id="@+id/playertxt"
+                android:layout_width="83dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Player Name"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/characterName"
+                app:layout_constraintTop_toBottomOf="@+id/generalinformation2" />
+
+            <TextView
+                android:id="@+id/player"
+                android:layout_width="150dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_player"
+                android:padding="5dp"
+                android:text="@string/text_view_player"
+                app:layout_constraintStart_toEndOf="@+id/characterName"
+                app:layout_constraintTop_toBottomOf="@+id/playertxt" />
+
+            <EditText
+                android:id="@+id/classtxt"
+                android:layout_width="53dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Class"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/characterName" />
+
+            <TextView
+                android:id="@+id/class1"
+                android:layout_width="150dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_class"
+                android:padding="5dp"
+                android:text="@string/text_view_class"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/classtxt" />
+
+            <EditText
+                android:id="@+id/classLeveltxt"
+                android:layout_width="109dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Level"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/class1"
+                app:layout_constraintTop_toBottomOf="@+id/characterName" />
+
+            <TextView
+                android:id="@+id/classLevel"
+                android:layout_width="150dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_class_level"
+                android:padding="5dp"
+                android:text="@string/text_view_class_level"
+                app:layout_constraintStart_toEndOf="@+id/class1"
+                app:layout_constraintTop_toBottomOf="@+id/classLeveltxt" />
+
+            <EditText
+                android:id="@+id/alignmenttxt"
+                android:layout_width="107dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Alignment"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/class1" />
+
+            <TextView
+                android:id="@+id/alignment"
+                android:layout_width="150dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_alignment"
+                android:padding="5dp"
+                android:text="@string/text_view_alignment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/alignmenttxt" />
+
+            <EditText
+                android:id="@+id/religiontxt"
+                android:layout_width="78dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Religion"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/alignment"
+                app:layout_constraintTop_toBottomOf="@+id/classLevel" />
+
+            <TextView
+                android:id="@+id/religion"
+                android:layout_width="150dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_religion"
+                android:padding="5dp"
+                android:text="@string/text_view_religion"
+                app:layout_constraintStart_toEndOf="@+id/alignment"
+                app:layout_constraintTop_toBottomOf="@+id/religiontxt" />
+
+            <EditText
+                android:id="@+id/characterDexription"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Character Description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="328dp" />
+
+            <EditText
+                android:id="@+id/heighttxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Height"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/characterDexription" />
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_height"
+                android:padding="5dp"
+                android:text="@string/text_view_height"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/heighttxt" />
+
+            <EditText
+                android:id="@+id/weighttxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Weight"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/height"
+                app:layout_constraintTop_toBottomOf="@+id/characterDexription" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_weight"
+                android:padding="5dp"
+                android:text="@string/text_view_weight"
+                app:layout_constraintStart_toEndOf="@+id/height"
+                app:layout_constraintTop_toBottomOf="@+id/weighttxt" />
+
+            <EditText
+                android:id="@+id/racetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Race"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/weight"
+                app:layout_constraintTop_toBottomOf="@+id/characterDexription" />
+
+            <TextView
+                android:id="@+id/race"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_Race"
+                android:padding="5dp"
+                android:text="@string/text_view_Race"
+                app:layout_constraintStart_toEndOf="@+id/weight"
+                app:layout_constraintTop_toBottomOf="@+id/racetxt" />
+
+            <EditText
+                android:id="@+id/Abilities"
+                android:layout_width="347dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Abilities"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="809dp" />
+
+            <EditText
+                android:id="@+id/Strengthtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Strength"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Abilities" />
+
+            <TextView
+                android:id="@+id/Strength"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_strength"
+                android:padding="5dp"
+                android:text="@string/text_view_strength"
+                app:layout_constraintStart_toEndOf="@id/Strengthtxt"
+                app:layout_constraintTop_toBottomOf="@+id/Abilities" />
+
+            <EditText
+                android:id="@+id/Dexteritytxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Dexterity"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Strengthtxt" />
+
+            <TextView
+                android:id="@+id/Dexterity"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_dexterity"
+                android:padding="5dp"
+                android:text="@string/text_view_dexterity"
+                app:layout_constraintStart_toEndOf="@id/Dexteritytxt"
+                app:layout_constraintTop_toBottomOf="@+id/Strength" />
+
+            <EditText
+                android:id="@+id/Constitutiontxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Constitution"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Dexteritytxt" />
+
+            <TextView
+                android:id="@+id/Constitution"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_constitution"
+                android:padding="5dp"
+                android:text="@string/text_view_constitution"
+                app:layout_constraintStart_toEndOf="@id/Constitutiontxt"
+                app:layout_constraintTop_toBottomOf="@+id/Dexterity" />
+
+            <EditText
+                android:id="@+id/Intelligencetxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Intelligence"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Constitutiontxt" />
+
+            <TextView
+                android:id="@+id/Intelligence"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_intelligence"
+                android:padding="5dp"
+                android:text="@string/text_view_intelligence"
+                app:layout_constraintStart_toEndOf="@id/Intelligencetxt"
+                app:layout_constraintTop_toBottomOf="@+id/Constitution" />
+
+            <EditText
+                android:id="@+id/Wisdomtxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Wisdom"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Intelligencetxt" />
+
+            <TextView
+                android:id="@+id/Wisdom"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_wisdom"
+                android:padding="5dp"
+                android:text="@string/text_view_wisdom"
+                app:layout_constraintStart_toEndOf="@id/Wisdomtxt"
+                app:layout_constraintTop_toBottomOf="@+id/Intelligence" />
+
+            <EditText
+                android:id="@+id/Charismatxt"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Charisma"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Wisdomtxt" />
+
+            <TextView
+                android:id="@+id/Charisma"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:contentDescription="@string/text_view_charisma"
+                android:padding="5dp"
+                android:text="@string/text_view_charisma"
+                app:layout_constraintStart_toEndOf="@id/Charismatxt"
+                app:layout_constraintTop_toBottomOf="@+id/Wisdom" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
