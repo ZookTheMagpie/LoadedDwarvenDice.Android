@@ -1,12 +1,16 @@
 package no.ntnu.hallvardpc.loadeddwarvendice;
 
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -36,5 +40,16 @@ public class CharacterSheetActivity extends AppCompatActivity {
     private void setStats(Map<String,String> map)
     {
 
+        Iterator it = map.keySet().iterator();
+        while(it.hasNext())
+        {
+            String name = (String) it.next();
+            Resources res = getResources();
+            int id = res.getIdentifier(name, "id", getPackageName());
+            TextView textView = (TextView) this.findViewById(id);
+            textView.setText(map.get(name));
+
+        }
     }
+
 }
