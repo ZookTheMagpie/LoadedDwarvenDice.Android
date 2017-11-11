@@ -70,3 +70,6 @@ public class CharacterSheetActivity extends AppCompatActivity {
 
 
 }
+
+
+//TODO: set android:imeOptions="actionDone" for all EditText in the xml.
