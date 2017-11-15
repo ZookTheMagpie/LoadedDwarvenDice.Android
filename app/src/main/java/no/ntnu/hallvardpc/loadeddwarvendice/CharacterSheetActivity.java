@@ -37,9 +37,13 @@ public class CharacterSheetActivity extends AppCompatActivity {
         {
             e.printStackTrace();
     }
-        //Believe we need an array with all the names of the EditText we want to listen to, and then run a while loop for them.
-        while() {
-            EditText targetEditText = (EditText) findViewById(R.id.target);
+        ArrayList<String> list = this.getEditTexts();
+        Iterator it = list.iterator();
+        while(it.hasNext()) {
+            String name = (String) it.next();
+            Resources res = getResources();
+            int id = res.getIdentifier(name, "id", getPackageName());
+            EditText targetEditText = (EditText) findViewById(id);
             targetEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
@@ -77,7 +81,7 @@ public class CharacterSheetActivity extends AppCompatActivity {
         }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111/characterSheets/0000000000000000" ,text));
     }
 
-    private ArrayList<String> getTextViews()
+    private ArrayList<String> getEditTexts()
     {
         ArrayList<String> list = new ArrayList<>();
         list.add("AC");
