@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -76,7 +77,79 @@ public class CharacterSheetActivity extends AppCompatActivity {
         }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111/characterSheets/0000000000000000" ,text));
     }
 
-    private 
+    private ArrayList<String> getTextViews()
+    {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("AC");
+        list.add("HitPoints");
+        list.add("eye");
+        list.add("skin");
+        list.add("hair");
+        list.add("gender");
+        list.add("characterName");
+        list.add("player");
+        list.add("cClass");
+        list.add("classLevel");
+        list.add("alignment");
+        list.add("religion");
+        list.add("height");
+        list.add("weight");
+        list.add("race");
+        list.add("Strength");
+        list.add("Dexterity");
+        list.add("Constitution");
+        list.add("Intelligence");
+        list.add("Wisdom");
+        list.add("Charisma");
+        list.add("Appraise");
+        list.add("Balance");
+        list.add("Bluff");
+        list.add("Climb");
+        list.add("Concentration");
+        list.add("Craft");
+        list.add("DecipherScript");
+        list.add("Diplomacy");
+        list.add("DisableDevice");
+        list.add("Disguise");
+        list.add("EscapeArtist");
+        list.add("Forgery");
+        list.add("GatherInformation");
+        list.add("HandleAnimal");
+        list.add("Heal");
+        list.add("Hide");
+        list.add("Intimidate");
+        list.add("Jump");
+        list.add("KnowledgeArcana");
+        list.add("KnowledgeArchitecture");
+        list.add("KnowledgeDungeoneering");
+        list.add("KnowledgeGeography");
+        list.add("KnowledgeHistory");
+        list.add("KnowledgeLocal");
+        list.add("KnowledgeNature");
+        list.add("KnowledgeNobility");
+        list.add("KnowledgeReligion");
+        list.add("KnowledgeThePlanes");
+        list.add("Listen");
+        list.add("MoveSilently");
+        list.add("OpenLock");
+        list.add("Perform");
+        list.add("Profession");
+        list.add("Ride");
+        list.add("Search");
+        list.add("SenseMotive");
+        list.add("SleightOfHand");
+        list.add("Spellcraft");
+        list.add("Spot");
+        list.add("Survival");
+        list.add("Swim");
+        list.add("Tumble");
+        list.add("UseMagicDevice");
+        list.add("UseRope");
+        list.add("");
+
+
+        return list;
+    }
 
 
 }
