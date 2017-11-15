@@ -3,6 +3,8 @@ package no.ntnu.hallvardpc.loadeddwarvendice;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -18,6 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 public class CharacterSheetActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +54,7 @@ public class CharacterSheetActivity extends AppCompatActivity {
                 }
             });
         }
+
     }
 
 
