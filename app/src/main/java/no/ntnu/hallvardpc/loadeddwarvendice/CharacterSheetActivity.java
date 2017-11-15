@@ -78,7 +78,7 @@ public class CharacterSheetActivity extends AppCompatActivity {
             protected void onPostExecute(Boolean status) {
                 System.out.println("Got on post value " + status);
             }
-        }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111/characterSheets/0000000000000000" ,text));
+        }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111/characterSheets/add" ,text));
     }
 
     private ArrayList<String> getEditTexts()
