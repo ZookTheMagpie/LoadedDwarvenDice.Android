@@ -32,7 +32,7 @@ public class CharacterSheetActivity extends AppCompatActivity {
                 public void onPostExecute(Map<String,String> values) {
                     setStats(values);
                 }
-            }).execute(new URL("http://158.38.101.111/characterSheets/?name=" + "1"));
+            }).execute(new URL("http://158.38.101.111:8080/LoadedDwarvenDice.Server-1.0-SNAPSHOT/webresources/characterSheets?name=" + ""));
         }   catch (MalformedURLException e)
         {
             e.printStackTrace();
@@ -77,7 +77,7 @@ public class CharacterSheetActivity extends AppCompatActivity {
             protected void onPostExecute(Boolean status) {
                 System.out.println("Got on post value " + status);
             }
-        }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111/characterSheets/add" ,text));
+        }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111:8080/LoadedDwarvenDice.Server-1.0-SNAPSHOT/webresources/characterSheets/add" ,text));
     }
 
 
