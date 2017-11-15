@@ -10,12 +10,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class ThumbnailAdapter extends RecyclerView.Adapter<ThumbnailAdapter.ThumbnailViewHolder> {
-    List<Photo> photos = new ArrayList<>();
     Context context;
 
     OnClickListener listener;
@@ -37,9 +38,8 @@ public class ThumbnailAdapter extends RecyclerView.Adapter<ThumbnailAdapter.Thum
 
     @Override
     public void onBindViewHolder(ThumbnailAdapter.ThumbnailViewHolder holder, int position) {
-        Drawable drawable = getResources().getDrawable(R.drawable.character_sheet);
         Picasso.with(context)
-                .load(Uri.parse(drawable + "?width=400"))
+                .load(Uri.parse("https://image.slidesharecdn.com/krisddfillable3-5charsheet-090608011808-phpapp02/95/kris-dd-fillable-35-char-sheet-1-728.jpg?cb=1244423900" + "?width=400"))
                 .into(holder.thumb);
     }
 
@@ -74,9 +74,5 @@ public class ThumbnailAdapter extends RecyclerView.Adapter<ThumbnailAdapter.Thum
                 }
             });
         }
-    }
-
-    public static class Photo {
-
     }
 }

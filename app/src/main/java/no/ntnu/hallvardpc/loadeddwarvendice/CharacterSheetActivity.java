@@ -35,7 +35,7 @@ public class CharacterSheetActivity extends AppCompatActivity {
                 public void onPostExecute(Map<String,String> values) {
                     setStats(values);
                 }
-            }).execute(new URL("http://158.38.101.111:8080/LoadedDwarvenDice.Server-1.0-SNAPSHOT/webresources/characterSheets?name=" + ""));
+            }).execute(new URL("http://158.38.101.111:8080/LoadedDwarvenDice.Server-1.0-SNAPSHOT/webresources/characterSheets?name=" + "1"));
         }   catch (MalformedURLException e)
         {
             e.printStackTrace();
@@ -43,13 +43,13 @@ public class CharacterSheetActivity extends AppCompatActivity {
         ArrayList<Integer> list = this.getEditTexts();
         Iterator it = list.iterator();
         while(it.hasNext()) {
-            int id = (Integer) it.next();
+            final int id = (Integer) it.next();
 
             EditText targetEditText = (EditText) findViewById(id);
             targetEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
-                    sendValue(textView);
+                    sendValue(textView, id);
                     return true;
                 }
             });
@@ -73,15 +73,26 @@ public class CharacterSheetActivity extends AppCompatActivity {
         }
     }
 
-    public void sendValue(TextView view) {
+    public void sendValue(TextView view, int id) {
         String text = view.getText().toString();
-        System.out.println("In sendValue " + text);
+
+
+        ArrayList<Integer> list = this.getEditTexts();
+        Iterator it = list.iterator();
+        while(it.hasNext()) {
+            final int i= (Integer) it.next();
+            if (i == id) return;
+        }
+        String name = "cClass";
+
+        System.out.println("In sendValue " + name + text);
+
         new PostValueToDatabase() {
             @Override
             protected void onPostExecute(Boolean status) {
                 System.out.println("Got on post value " + status);
             }
-        }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111:8080/LoadedDwarvenDice.Server-1.0-SNAPSHOT/webresources/characterSheets/add" ,text));
+        }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111:8080/LoadedDwarvenDice.Server-1.0-SNAPSHOT/webresources/characterSheets/add?name = 1" ,text, name));
     }
 
 
