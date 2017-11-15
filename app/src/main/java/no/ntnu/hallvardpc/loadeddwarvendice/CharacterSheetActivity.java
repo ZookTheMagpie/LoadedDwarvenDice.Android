@@ -32,17 +32,16 @@ public class CharacterSheetActivity extends AppCompatActivity {
                 public void onPostExecute(Map<String,String> values) {
                     setStats(values);
                 }
-            }).execute(new URL("http://158.38.101.111/characterSheets/?name=" + ""));
+            }).execute(new URL("http://158.38.101.111/characterSheets/?name=" + "1"));
         }   catch (MalformedURLException e)
         {
             e.printStackTrace();
     }
-        ArrayList<String> list = this.getEditTexts();
+        ArrayList<Integer> list = this.getEditTexts();
         Iterator it = list.iterator();
         while(it.hasNext()) {
-            String name = (String) it.next();
-            Resources res = getResources();
-            int id = res.getIdentifier(name, "id", getPackageName());
+            int id = (Integer) it.next();
+
             EditText targetEditText = (EditText) findViewById(id);
             targetEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
@@ -81,75 +80,76 @@ public class CharacterSheetActivity extends AppCompatActivity {
         }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111/characterSheets/add" ,text));
     }
 
-    private ArrayList<String> getEditTexts()
+
+    private ArrayList<Integer> getEditTexts()
     {
-        ArrayList<String> list = new ArrayList<>();
-        list.add("AC");
-        list.add("HitPoints");
-        list.add("eye");
-        list.add("skin");
-        list.add("hair");
-        list.add("gender");
-        list.add("characterName");
-        list.add("player");
-        list.add("cClass");
-        list.add("classLevel");
-        list.add("alignment");
-        list.add("religion");
-        list.add("height");
-        list.add("weight");
-        list.add("race");
-        list.add("Strength");
-        list.add("Dexterity");
-        list.add("Constitution");
-        list.add("Intelligence");
-        list.add("Wisdom");
-        list.add("Charisma");
-        list.add("Appraise");
-        list.add("Balance");
-        list.add("Bluff");
-        list.add("Climb");
-        list.add("Concentration");
-        list.add("Craft");
-        list.add("DecipherScript");
-        list.add("Diplomacy");
-        list.add("DisableDevice");
-        list.add("Disguise");
-        list.add("EscapeArtist");
-        list.add("Forgery");
-        list.add("GatherInformation");
-        list.add("HandleAnimal");
-        list.add("Heal");
-        list.add("Hide");
-        list.add("Intimidate");
-        list.add("Jump");
-        list.add("KnowledgeArcana");
-        list.add("KnowledgeArchitecture");
-        list.add("KnowledgeDungeoneering");
-        list.add("KnowledgeGeography");
-        list.add("KnowledgeHistory");
-        list.add("KnowledgeLocal");
-        list.add("KnowledgeNature");
-        list.add("KnowledgeNobility");
-        list.add("KnowledgeReligion");
-        list.add("KnowledgeThePlanes");
-        list.add("Listen");
-        list.add("MoveSilently");
-        list.add("OpenLock");
-        list.add("Perform");
-        list.add("Profession");
-        list.add("Ride");
-        list.add("Search");
-        list.add("SenseMotive");
-        list.add("SleightOfHand");
-        list.add("Spellcraft");
-        list.add("Spot");
-        list.add("Survival");
-        list.add("Swim");
-        list.add("Tumble");
-        list.add("UseMagicDevice");
-        list.add("UseRope");
-        list.add("");
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(R.id.AC);
+        list.add(R.id.HitPoints);
+        list.add(R.id.eye);
+        list.add(R.id.skin);
+        list.add(R.id.hair);
+        list.add(R.id.gender);
+        list.add(R.id.characterName);
+        list.add(R.id.player);
+        list.add(R.id.cClass);
+        list.add(R.id.classLevel);
+        list.add(R.id.alignment);
+        list.add(R.id.religion);
+        list.add(R.id.height);
+        list.add(R.id.weight);
+        list.add(R.id.race);
+        list.add(R.id.Strength);
+        list.add(R.id.Dexterity);
+        list.add(R.id.Constitution);
+        list.add(R.id.Intelligence);
+        list.add(R.id.Wisdom);
+        list.add(R.id.Charisma);
+        list.add(R.id.Appraise);
+        list.add(R.id.Balance);
+        list.add(R.id.Bluff);
+        list.add(R.id.Climb);
+        list.add(R.id.Concentration);
+        list.add(R.id.Craft);
+        list.add(R.id.DecipherScript);
+        list.add(R.id.Diplomacy);
+        list.add(R.id.DisableDevice);
+        list.add(R.id.Disguise);
+        list.add(R.id.EscapeArtist);
+        list.add(R.id.Forgery);
+        list.add(R.id.GatherInformation);
+        list.add(R.id.HandleAnimal);
+        list.add(R.id.Heal);
+        list.add(R.id.Hide);
+        list.add(R.id.Intimidate);
+        list.add(R.id.Jump);
+        list.add(R.id.KnowledgeArcana);
+        list.add(R.id.KnowledgeArchitecture);
+        list.add(R.id.KnowledgeDungeoneering);
+        list.add(R.id.KnowledgeGeography);
+        list.add(R.id.KnowledgeHistory);
+        list.add(R.id.KnowledgeLocal);
+        list.add(R.id.KnowledgeNature);
+        list.add(R.id.KnowledgeNobility);
+        list.add(R.id.KnowledgeReligion);
+        list.add(R.id.KnowledgeThePlanes);
+        list.add(R.id.Listen);
+        list.add(R.id.MoveSilently);
+        list.add(R.id.OpenLock);
+        list.add(R.id.Perform);
+        list.add(R.id.Profession);
+        list.add(R.id.Ride);
+        list.add(R.id.Search);
+        list.add(R.id.SenseMotive);
+        list.add(R.id.SleightOfHand);
+        list.add(R.id.Spellcraft);
+        list.add(R.id.Spot);
+        list.add(R.id.Survival);
+        list.add(R.id.Swim);
+        list.add(R.id.Tumble);
+        list.add(R.id.UseMagicDevice);
+        list.add(R.id.UseRope);
+
 
 
         return list;
