@@ -3,6 +3,7 @@ package no.ntnu.hallvardpc.loadeddwarvendice;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
@@ -36,8 +37,16 @@ public class CharacterSheetActivity extends AppCompatActivity {
             e.printStackTrace();
     }
         //Believe we need an array with all the names of the EditText we want to listen to, and then run a while loop for them.
-        EditText targetEditText = (EditText)findViewById(R.id.target);
-        targetEditText.setOnEditorActionListener(sendValue(target));
+        while() {
+            EditText targetEditText = (EditText) findViewById(R.id.target);
+            targetEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+                    sendValue(textView);
+                    return true;
+                }
+            });
+        }
     }
 
 
@@ -56,9 +65,8 @@ public class CharacterSheetActivity extends AppCompatActivity {
         }
     }
 
-    public void sendValue(View view) {
-        TextView t = (TextView) findViewById(R.id.target);
-        String text = t.getText().toString();
+    public void sendValue(TextView view) {
+        String text = view.getText().toString();
         System.out.println("In sendValue " + text);
         new PostValueToDatabase() {
             @Override
@@ -67,6 +75,8 @@ public class CharacterSheetActivity extends AppCompatActivity {
             }
         }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111/characterSheets/0000000000000000" ,text));
     }
+
+    private 
 
 
 }
