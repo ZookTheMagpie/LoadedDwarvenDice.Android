@@ -49,7 +49,7 @@ public class CharacterSheetActivity extends AppCompatActivity {
             targetEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
-                    sendValue(textView, id);
+                    sendValue(textView);
                     return true;
                 }
             });
@@ -73,10 +73,10 @@ public class CharacterSheetActivity extends AppCompatActivity {
         }
     }
 
-    public void sendValue(TextView view, int id) {
+    public void sendValue(TextView view) {
         String text = view.getText().toString();
 
-
+        int id = view.getId();
         HashMap<Integer,String> list = this.getEditTexts();
         String name = list.get(id);
 
