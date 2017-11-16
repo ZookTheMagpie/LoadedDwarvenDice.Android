@@ -20,7 +20,6 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="91dp"
-            android:layout_height="177dp"
-            app:srcCompat="@drawable/character_sheet" />
+            android:layout_height="177dp"></ImageView>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

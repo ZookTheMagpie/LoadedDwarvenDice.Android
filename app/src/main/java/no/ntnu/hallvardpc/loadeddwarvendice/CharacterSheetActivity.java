@@ -40,8 +40,8 @@ public class CharacterSheetActivity extends AppCompatActivity {
         {
             e.printStackTrace();
     }
-        ArrayList<Integer> list = this.getEditTexts();
-        Iterator it = list.iterator();
+        HashMap<Integer,String> list = this.getEditTexts();
+        Iterator it = list.keySet().iterator();
         while(it.hasNext()) {
             final int id = (Integer) it.next();
 
@@ -77,13 +77,8 @@ public class CharacterSheetActivity extends AppCompatActivity {
         String text = view.getText().toString();
 
 
-        ArrayList<Integer> list = this.getEditTexts();
-        Iterator it = list.iterator();
-        while(it.hasNext()) {
-            final int i= (Integer) it.next();
-            if (i == id) return;
-        }
-        String name = "cClass";
+        HashMap<Integer,String> list = this.getEditTexts();
+        String name = list.get(id);
 
         System.out.println("In sendValue " + name + text);
 
@@ -96,74 +91,74 @@ public class CharacterSheetActivity extends AppCompatActivity {
     }
 
 
-    private ArrayList<Integer> getEditTexts()
+    private HashMap<Integer,String> getEditTexts()
     {
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(R.id.AC);
-        list.add(R.id.HitPoints);
-        list.add(R.id.eye);
-        list.add(R.id.skin);
-        list.add(R.id.hair);
-        list.add(R.id.gender);
-        list.add(R.id.characterName);
-        list.add(R.id.player);
-        list.add(R.id.cClass);
-        list.add(R.id.classLevel);
-        list.add(R.id.alignment);
-        list.add(R.id.religion);
-        list.add(R.id.height);
-        list.add(R.id.weight);
-        list.add(R.id.race);
-        list.add(R.id.Strength);
-        list.add(R.id.Dexterity);
-        list.add(R.id.Constitution);
-        list.add(R.id.Intelligence);
-        list.add(R.id.Wisdom);
-        list.add(R.id.Charisma);
-        list.add(R.id.Appraise);
-        list.add(R.id.Balance);
-        list.add(R.id.Bluff);
-        list.add(R.id.Climb);
-        list.add(R.id.Concentration);
-        list.add(R.id.Craft);
-        list.add(R.id.DecipherScript);
-        list.add(R.id.Diplomacy);
-        list.add(R.id.DisableDevice);
-        list.add(R.id.Disguise);
-        list.add(R.id.EscapeArtist);
-        list.add(R.id.Forgery);
-        list.add(R.id.GatherInformation);
-        list.add(R.id.HandleAnimal);
-        list.add(R.id.Heal);
-        list.add(R.id.Hide);
-        list.add(R.id.Intimidate);
-        list.add(R.id.Jump);
-        list.add(R.id.KnowledgeArcana);
-        list.add(R.id.KnowledgeArchitecture);
-        list.add(R.id.KnowledgeDungeoneering);
-        list.add(R.id.KnowledgeGeography);
-        list.add(R.id.KnowledgeHistory);
-        list.add(R.id.KnowledgeLocal);
-        list.add(R.id.KnowledgeNature);
-        list.add(R.id.KnowledgeNobility);
-        list.add(R.id.KnowledgeReligion);
-        list.add(R.id.KnowledgeThePlanes);
-        list.add(R.id.Listen);
-        list.add(R.id.MoveSilently);
-        list.add(R.id.OpenLock);
-        list.add(R.id.Perform);
-        list.add(R.id.Profession);
-        list.add(R.id.Ride);
-        list.add(R.id.Search);
-        list.add(R.id.SenseMotive);
-        list.add(R.id.SleightOfHand);
-        list.add(R.id.Spellcraft);
-        list.add(R.id.Spot);
-        list.add(R.id.Survival);
-        list.add(R.id.Swim);
-        list.add(R.id.Tumble);
-        list.add(R.id.UseMagicDevice);
-        list.add(R.id.UseRope);
+        HashMap<Integer,String> list = new HashMap<>();
+        list.put(R.id.AC,"AC");
+        list.put(R.id.HitPoints,"HitPoints");
+        list.put(R.id.eye,"eye");
+        list.put(R.id.skin,"skin");
+        list.put(R.id.hair,"hair");
+        list.put(R.id.gender,"gender");
+        list.put(R.id.characterName,"characterName");
+        list.put(R.id.player,"player");
+        list.put(R.id.cClass,"cClass");
+        list.put(R.id.classLevel,"classLevel");
+        list.put(R.id.alignment,"alignment");
+        list.put(R.id.religion,"religion");
+        list.put(R.id.height,"height");
+        list.put(R.id.weight,"weight");
+        list.put(R.id.race,"race");
+        list.put(R.id.Strength,"Strength");
+        list.put(R.id.Dexterity,"Dexterity");
+        list.put(R.id.Constitution,"Constitution");
+        list.put(R.id.Intelligence,"Intelligence");
+        list.put(R.id.Wisdom,"Wisdom");
+        list.put(R.id.Charisma,"Charisma");
+        list.put(R.id.Appraise,"Appraise");
+        list.put(R.id.Balance,"Balance");
+        list.put(R.id.Bluff,"Bluff");
+        list.put(R.id.Climb,"Climb");
+        list.put(R.id.Concentration,"Concentration");
+        list.put(R.id.Craft,"Craft");
+        list.put(R.id.DecipherScript,"DecipherScript");
+        list.put(R.id.Diplomacy,"Diplomacy");
+        list.put(R.id.DisableDevice,"DisableDevice");
+        list.put(R.id.Disguise,"Disguise");
+        list.put(R.id.EscapeArtist,"EscapeArtist");
+        list.put(R.id.Forgery,"Forgery");
+        list.put(R.id.GatherInformation,"GatherInformation");
+        list.put(R.id.HandleAnimal,"HandleAnimal");
+        list.put(R.id.Heal,"Heal");
+        list.put(R.id.Hide,"Hide");
+        list.put(R.id.Intimidate,"Intimidate");
+        list.put(R.id.Jump,"Jump");
+        list.put(R.id.KnowledgeArcana,"KnowledgeArcana");
+        list.put(R.id.KnowledgeArchitecture,"KnowledgeArchitecture");
+        list.put(R.id.KnowledgeDungeoneering,"KnowledgeDungeoneering");
+        list.put(R.id.KnowledgeGeography,"KnowledgeGeography");
+        list.put(R.id.KnowledgeHistory,"KnowledgeHistory");
+        list.put(R.id.KnowledgeLocal,"KnowledgeLocal");
+        list.put(R.id.KnowledgeNature,"KnowledgeNature");
+        list.put(R.id.KnowledgeNobility,"KnowledgeNobility");
+        list.put(R.id.KnowledgeReligion,"KnowledgeReligion");
+        list.put(R.id.KnowledgeThePlanes,"KnowledgeThePlanes");
+        list.put(R.id.Listen,"Listen");
+        list.put(R.id.MoveSilently,"MoveSilently");
+        list.put(R.id.OpenLock,"OpenLock");
+        list.put(R.id.Perform,"Perform");
+        list.put(R.id.Profession,"Profession");
+        list.put(R.id.Ride,"Ride");
+        list.put(R.id.Search,"Search");
+        list.put(R.id.SenseMotive,"SenseMotive");
+        list.put(R.id.SleightOfHand,"SleightOfHand");
+        list.put(R.id.Spellcraft,"Spellcraft");
+        list.put(R.id.Spot,"Spot");
+        list.put(R.id.Survival,"Survival");
+        list.put(R.id.Swim,"Swim");
+        list.put(R.id.Tumble,"Tumble");
+        list.put(R.id.UseMagicDevice,"UseMagicDevice");
+        list.put(R.id.UseRope,"UseRope");
 
 
 
@@ -173,5 +168,3 @@ public class CharacterSheetActivity extends AppCompatActivity {
 
 }
 
-
-//TODO: set android:imeOptions="actionDone" for all EditText in the xml.
