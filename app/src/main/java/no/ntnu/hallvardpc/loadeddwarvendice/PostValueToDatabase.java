@@ -47,8 +47,9 @@ public class PostValueToDatabase extends AsyncTask<PostValueToDatabase.PostValue
                         new OutputStreamWriter(con.getOutputStream(),"UTF-8"));
                 JsonWriter jw = new JsonWriter(bw); // Android JSON support library
                 jw.beginObject();
-                    jw.name("text").value(value.getText());
-                    jw.name("name").value(value.getName());
+                jw.name("name").value(value.getName());
+                jw.name("text").value(value.getText());
+
                     jw.endObject();
 
                     jw.close();
