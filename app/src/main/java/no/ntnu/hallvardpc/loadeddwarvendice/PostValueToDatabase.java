@@ -50,7 +50,6 @@ public class PostValueToDatabase extends AsyncTask<PostValueToDatabase.PostValue
                     jw.name("text").value(value.getText());
                     jw.name("name").value(value.getName());
                     jw.endObject();
-                    jw.beginObject();
 
                     jw.close();
 
