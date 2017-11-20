@@ -80,7 +80,7 @@ public class CharacterSheetActivity extends AppCompatActivity {
         HashMap<Integer,String> list = this.getEditTexts();
         String name = list.get(id);
 
-        System.out.println("In sendValue " + name + text);
+        System.out.println("In sendValue " + name + " " + text);
 
         new PostValueToDatabase() {
             @Override
