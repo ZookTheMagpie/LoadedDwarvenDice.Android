@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundShade"
-    tools:context="berg.dwarvendiceroller.MainActivity">
+    tools:context="no.ntnu.hallvardpc.loadeddwarvendice.DiceRoller">
 
     <Spinner
         android:id="@+id/spinnerCustomSelection"
@@ -116,7 +116,7 @@
         android:id="@+id/result"
         android:layout_width="117dp"
         android:layout_height="61dp"
-        android:background="@drawable/back"
+        android:background="@drawable/dice_roller_result_back"
         android:gravity="center"
         android:textAlignment="center"
         android:textColor="@android:color/black"
