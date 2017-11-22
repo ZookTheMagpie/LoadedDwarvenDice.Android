@@ -25,11 +25,13 @@
     <Button
         android:id="@+id/buttontemporary"
         android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="-60dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
-        android:text="temproary acces to character @string/bottom_sheet_behavior"
+        android:background="@drawable/character_sheet"
         app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNewCharacterSheet"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/buttonNewCharacterSheet"
         tools:layout_editor_absoluteY="16dp" />
