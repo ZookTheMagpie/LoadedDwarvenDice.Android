@@ -12,20 +12,20 @@ import android.widget.NumberPicker;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
  *
  */
-public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemSelectedListener
-{
-    Spinner diceTypeSpinner = (Spinner) findViewById(R.id.spinnerDiceType);
-    RadioButton minus = (RadioButton) findViewById(R.id.radioButtonMinus);
-    RadioButton plus = (RadioButton) findViewById(R.id.radioButtonPlus);
-    NumberPicker modifier = (NumberPicker) findViewById(R.id.modifier);
-    NumberPicker numberOfDice = (NumberPicker) findViewById(R.id.numberOfDice);
-    Button rollDice = (Button) findViewById(R.id.roll);
-    TextView diceResult = (TextView) findViewById(R.id.result);
+public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+    Spinner diceTypeSpinner;
+    RadioButton minus;
+    RadioButton plus;
+    NumberPicker modifier;
+    NumberPicker numberOfDice;
+    Button rollDice;
+    TextView diceResult;
 
     Integer diceTypeValue;
 
@@ -34,6 +34,14 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        diceTypeSpinner = (Spinner) findViewById(R.id.spinnerDiceType);
+        this.minus = (RadioButton) findViewById(R.id.radioButtonMinus);
+        this.plus = (RadioButton) findViewById(R.id.radioButtonPlus);
+        this.modifier = (NumberPicker) findViewById(R.id.modifier);
+        this.numberOfDice = (NumberPicker) findViewById(R.id.numberOfDice);
+        this.rollDice = (Button) findViewById(R.id.roll);
+        this.diceResult = (TextView) findViewById(R.id.result);
 
         //Dice type selection
         ArrayAdapter<CharSequence> diceAdapter = ArrayAdapter.createFromResource(this, R.array.diceTypeOptions, android.R.layout.simple_spinner_item);
@@ -89,19 +97,14 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
                     });
         } else {
             int currentResult = 0;
-            for (int i = 0; i <= numberOfDiceValue; i++)
-            {
-                if (plus.isChecked())
-                {
+            for (int i = 0; i <= numberOfDiceValue; i++) {
+                if (plus.isChecked()) {
                     currentResult += rollDice(diceTypeValue) + modifierValue;
-                } else if (minus.isChecked())
-                {
+                } else if (minus.isChecked()) {
                     int roll = rollDice(diceTypeValue) - modifierValue;
-                    if (roll <= 0)
-                    {
+                    if (roll <= 0) {
                         currentResult += 0;
-                    }else
-                    {
+                    } else {
                         currentResult += roll;
                     }
                 }
@@ -112,10 +115,10 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
 
     /**
      * Rolls a single dice of a specific type
+     *
      * @return The dice result
      */
-    private Integer rollDice(int dice)
-    {
+    private Integer rollDice(int dice) {
         int result = 0;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
             result = ThreadLocalRandom.current().nextInt(1, dice + 1);
@@ -126,6 +129,7 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
 
     /**
      * Selects the dice type
+     *
      * @param parent
      * @param view
      * @param position

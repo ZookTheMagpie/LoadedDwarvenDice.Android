@@ -98,8 +98,8 @@
         android:layout_height="59dp"
         android:text="Roll"
         android:textSize="15sp"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="159dp" />
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="307dp" />
 
     <TextView
         android:id="@+id/resultTXT"
