@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 public class CharacterSheetActivity extends AppCompatActivity {
+    boolean offline = true;
 
 
     @Override
@@ -29,17 +30,8 @@ public class CharacterSheetActivity extends AppCompatActivity {
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
 
-        try {
-            new LoadValues(new LoadValues.OnPostExecute() {
-                @Override
-                public void onPostExecute(Map<String,String> values) {
-                    setStats(values);
-                }
-            }).execute(new URL("http://158.38.101.111:8080/LoadedDwarvenDice.Server-1.0-SNAPSHOT/webresources/characterSheets?name=" + "1"));
-        }   catch (MalformedURLException e)
-        {
-            e.printStackTrace();
-    }
+        loadValues();
+
         HashMap<Integer,String> list = this.getEditTexts();
         Iterator it = list.keySet().iterator();
         while(it.hasNext()) {
@@ -55,6 +47,21 @@ public class CharacterSheetActivity extends AppCompatActivity {
             });
         }
 
+    }
+
+    public void loadValues ()
+    {
+        try {
+            new LoadValues(new LoadValues.OnPostExecute() {
+                @Override
+                public void onPostExecute(Map<String,String> values) {
+                    setStats(values);
+                }
+            }).execute(new URL("http://158.38.101.111:8080/LoadedDwarvenDice.Server-1.0-SNAPSHOT/webresources/characterSheets?name=" + "1"));
+        }   catch (MalformedURLException e)
+        {
+            e.printStackTrace();
+        }
     }
 
 
@@ -74,20 +81,34 @@ public class CharacterSheetActivity extends AppCompatActivity {
     }
 
     public void sendValue(TextView view) {
-        String text = view.getText().toString();
+        if (offline == true) {
+            HashMap<String,String> values = new HashMap<>();
 
-        int id = view.getId();
-        HashMap<Integer,String> list = this.getEditTexts();
-        String name = list.get(id);
+            int id = view.getId();
+            HashMap<Integer, String> list = this.getEditTexts();
+            String name = list.get(id);
+            String text = view.getText().toString();
 
-        System.out.println("In sendValue " + name + " " + text);
+            values.put(name,text);
 
-        new PostValueToDatabase() {
-            @Override
-            protected void onPostExecute(Boolean status) {
-                System.out.println("Got on post value " + status);
-            }
-        }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111:8080/LoadedDwarvenDice.Server-1.0-SNAPSHOT/webresources/characterSheets/add?name = 1" ,text, name));
+            setStats(values);
+        } else
+            {
+            String text = view.getText().toString();
+
+            int id = view.getId();
+            HashMap<Integer, String> list = this.getEditTexts();
+            String name = list.get(id);
+
+            System.out.println("In sendValue " + name + " " + text);
+
+            new PostValueToDatabase() {
+                @Override
+                protected void onPostExecute(Boolean status) {
+                    System.out.println("Got on post value " + status);
+                }
+            }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111:8080/LoadedDwarvenDice.Server-1.0-SNAPSHOT/webresources/characterSheets/add?name = 1", text, name));
+        }
     }
 
 
