@@ -26,14 +26,14 @@
                 android:id="@+id/Skintxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Skin"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/hairtxt"
-                app:layout_constraintTop_toBottomOf="@+id/race" />
+                app:layout_constraintTop_toBottomOf="@+id/race"
+                tools:layout_editor_absoluteX="258dp" />
 
             <TextView
                 android:id="@+id/Eyetxt"
@@ -46,7 +46,8 @@
                 android:hint="Eye Color"
                 android:textSize="12sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/gender" />
+                app:layout_constraintTop_toBottomOf="@+id/gender"
+                android:layout_marginStart="16dp" />
 
             <TextView
                 android:id="@+id/hitpointstxt"
@@ -60,7 +61,7 @@
                 android:textSize="12sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/eye"
-                tools:layout_editor_absoluteY="663dp" />
+                android:layout_marginStart="16dp" />
 
             <TextView
                 android:id="@+id/ACtxt"
@@ -74,13 +75,12 @@
                 android:textSize="12sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/hitpointstxt"
-                tools:layout_editor_absoluteX="8dp" />
+                android:layout_marginStart="16dp" />
 
             <EditText
                 android:id="@+id/AC"
                 android:layout_width="50dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_hit_points"
@@ -88,39 +88,38 @@
                 android:hint="@string/text_view_hit_points"
                 app:layout_constraintStart_toEndOf="@+id/ACtxt"
                 app:layout_constraintTop_toBottomOf="@+id/hitpointstxt"
-                tools:layout_editor_absoluteY="663dp" />
+                tools:layout_editor_absoluteX="142dp" />
 
             <TextView
                 android:id="@+id/hairtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Hair"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/gendertxt"
-                app:layout_constraintTop_toBottomOf="@+id/weight" />
+                app:layout_constraintTop_toBottomOf="@+id/weight"
+                tools:layout_editor_absoluteX="142dp" />
 
             <TextView
                 android:id="@+id/gendertxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Gender"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/height" />
+                app:layout_constraintTop_toBottomOf="@+id/height"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/HitPoints"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_hit_points"
@@ -128,43 +127,43 @@
                 android:hint="@string/text_view_hit_points"
                 app:layout_constraintStart_toEndOf="@+id/hitpointstxt"
                 app:layout_constraintTop_toBottomOf="@+id/eye"
-                tools:layout_editor_absoluteY="663dp" />
+                tools:layout_editor_absoluteX="142dp" />
 
             <EditText
                 android:id="@+id/eye"
                 android:layout_width="102dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_eye"
                 android:padding="5dp"
                 android:hint="@string/text_view_eye"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Eyetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Eyetxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/skin"
                 android:layout_width="102dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_skin"
                 android:padding="5dp"
                 android:hint="@string/text_view_skin"
                 app:layout_constraintStart_toEndOf="@+id/hair"
-                app:layout_constraintTop_toBottomOf="@+id/Skintxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Skintxt"
+                tools:layout_editor_absoluteX="242dp" />
 
             <EditText
                 android:id="@+id/hair"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_hair"
                 android:padding="5dp"
                 android:hint="@string/text_view_hair"
                 app:layout_constraintStart_toEndOf="@+id/gender"
-                app:layout_constraintTop_toBottomOf="@+id/Skintxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Skintxt"
+                tools:layout_editor_absoluteX="134dp" />
 
             <EditText
                 android:id="@+id/gender"
@@ -194,7 +193,9 @@
                 app:layout_constraintHorizontal_bias="0.428"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
 
             <TextView
                 android:id="@+id/characterNametxt"
@@ -207,7 +208,8 @@
                 android:hint="Character Name"
                 android:textSize="12sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/generalinformation2" />
+                app:layout_constraintTop_toBottomOf="@+id/generalinformation2"
+                android:layout_marginStart="16dp" />
 
             <EditText
                 android:id="@+id/characterName"
@@ -220,32 +222,33 @@
                 android:padding="5dp"
                 android:hint="@string/text_view_character_name"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/characterNametxt" />
+                app:layout_constraintTop_toBottomOf="@+id/characterNametxt"
+                android:layout_marginStart="16dp" />
 
             <TextView
                 android:id="@+id/playertxt"
                 android:layout_width="83dp"
                 android:layout_height="41dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Player Name"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/characterName"
-                app:layout_constraintTop_toBottomOf="@+id/generalinformation2" />
+                app:layout_constraintTop_toBottomOf="@+id/generalinformation2"
+                tools:layout_editor_absoluteX="192dp" />
 
             <EditText
                 android:id="@+id/player"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_player"
                 android:padding="5dp"
                 android:hint="@string/text_view_player"
                 app:layout_constraintStart_toEndOf="@+id/characterName"
-                app:layout_constraintTop_toBottomOf="@+id/playertxt" />
+                app:layout_constraintTop_toBottomOf="@+id/playertxt"
+                tools:layout_editor_absoluteX="184dp" />
 
             <TextView
                 android:id="@+id/classtxt"
@@ -258,7 +261,8 @@
                 android:hint="Class"
                 android:textSize="12sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/characterName" />
+                app:layout_constraintTop_toBottomOf="@+id/characterName"
+                android:layout_marginStart="16dp" />
 
             <EditText
                 android:id="@+id/cClass"
@@ -270,86 +274,87 @@
                 android:padding="5dp"
                 android:hint="@string/text_view_class"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/classtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/classtxt"
+                android:layout_marginStart="16dp" />
 
             <TextView
                 android:id="@+id/classLeveltxt"
                 android:layout_width="109dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Level"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/cClass"
-                app:layout_constraintTop_toBottomOf="@+id/characterName" />
+                app:layout_constraintTop_toBottomOf="@+id/characterName"
+                tools:layout_editor_absoluteX="192dp" />
 
             <EditText
                 android:id="@+id/classLevel"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_class_level"
                 android:padding="5dp"
                 android:hint="@string/text_view_class_level"
                 app:layout_constraintStart_toEndOf="@+id/cClass"
-                app:layout_constraintTop_toBottomOf="@+id/classLeveltxt" />
+                app:layout_constraintTop_toBottomOf="@+id/classLeveltxt"
+                tools:layout_editor_absoluteX="184dp" />
 
             <TextView
                 android:id="@+id/alignmenttxt"
                 android:layout_width="107dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Alignment"
                 android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cClass" />
+                app:layout_constraintTop_toBottomOf="@+id/cClass"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/alignment"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_alignment"
                 android:padding="5dp"
                 android:hint="@string/text_view_alignment"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/alignmenttxt" />
+                app:layout_constraintTop_toBottomOf="@+id/alignmenttxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <TextView
                 android:id="@+id/religiontxt"
                 android:layout_width="78dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Religion"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/alignment"
-                app:layout_constraintTop_toBottomOf="@+id/classLevel" />
+                app:layout_constraintTop_toBottomOf="@+id/classLevel"
+                tools:layout_editor_absoluteX="192dp" />
 
             <EditText
                 android:id="@+id/religion"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_religion"
                 android:padding="5dp"
                 android:hint="@string/text_view_religion"
                 app:layout_constraintStart_toEndOf="@+id/alignment"
-                app:layout_constraintTop_toBottomOf="@+id/religiontxt" />
+                app:layout_constraintTop_toBottomOf="@+id/religiontxt"
+                tools:layout_editor_absoluteX="184dp" />
 
             <TextView
                 android:id="@+id/characterDescription"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="8dp"
@@ -360,7 +365,8 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/religion"
-                tools:layout_editor_absoluteY="328dp" />
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp" />
 
             <TextView
                 android:id="@+id/heighttxt"
@@ -373,7 +379,8 @@
                 android:hint="Height"
                 android:textSize="12sp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/characterDescription" />
+                app:layout_constraintTop_toBottomOf="@+id/characterDescription"
+                android:layout_marginStart="16dp" />
 
             <EditText
                 android:id="@+id/height"
@@ -393,51 +400,51 @@
                 android:id="@+id/weighttxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Weight"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/height"
-                app:layout_constraintTop_toBottomOf="@+id/characterDescription" />
+                app:layout_constraintTop_toBottomOf="@+id/characterDescription"
+                tools:layout_editor_absoluteX="142dp" />
 
             <EditText
                 android:id="@+id/weight"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_weight"
                 android:padding="5dp"
                 android:hint="@string/text_view_weight"
                 app:layout_constraintStart_toEndOf="@+id/height"
-                app:layout_constraintTop_toBottomOf="@+id/weighttxt" />
+                app:layout_constraintTop_toBottomOf="@+id/weighttxt"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/racetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Race"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/weight"
-                app:layout_constraintTop_toBottomOf="@+id/characterDescription" />
+                app:layout_constraintTop_toBottomOf="@+id/characterDescription"
+                tools:layout_editor_absoluteX="250dp" />
 
             <EditText
                 android:id="@+id/race"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_Race"
                 android:padding="5dp"
                 android:hint="@string/text_view_Race"
                 app:layout_constraintStart_toEndOf="@+id/weight"
-                app:layout_constraintTop_toBottomOf="@+id/racetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/racetxt"
+                tools:layout_editor_absoluteX="242dp" />
 
             <TextView
                 android:id="@+id/Abilities"
@@ -449,164 +456,164 @@
                 android:inputType="textPersonName"
                 android:hint="Abilities"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/ACtxt"
-                tools:layout_editor_absoluteY="809dp" />
+                app:layout_constraintTop_toBottomOf="@+id/ACtxt"
+                android:layout_marginStart="16dp" />
 
             <TextView
                 android:id="@+id/Strengthtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Strength"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Abilities" />
+                app:layout_constraintTop_toBottomOf="@+id/Abilities"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Strength"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_strength"
                 android:padding="5dp"
                 android:hint="@string/text_view_strength"
                 app:layout_constraintStart_toEndOf="@id/Strengthtxt"
-                app:layout_constraintTop_toBottomOf="@+id/Abilities" />
+                app:layout_constraintTop_toBottomOf="@+id/Abilities"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Dexteritytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Dexterity"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Strengthtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Strengthtxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Dexterity"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_dexterity"
                 android:padding="5dp"
                 android:hint="@string/text_view_dexterity"
                 app:layout_constraintStart_toEndOf="@id/Dexteritytxt"
-                app:layout_constraintTop_toBottomOf="@+id/Strength" />
+                app:layout_constraintTop_toBottomOf="@+id/Strength"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Constitutiontxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Constitution"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Dexteritytxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Dexteritytxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Constitution"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_constitution"
                 android:padding="5dp"
                 android:hint="@string/text_view_constitution"
                 app:layout_constraintStart_toEndOf="@id/Constitutiontxt"
-                app:layout_constraintTop_toBottomOf="@+id/Dexterity" />
+                app:layout_constraintTop_toBottomOf="@+id/Dexterity"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Intelligencetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Intelligence"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Constitutiontxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Constitutiontxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Intelligence"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_intelligence"
                 android:padding="5dp"
                 android:hint="@string/text_view_intelligence"
                 app:layout_constraintStart_toEndOf="@id/Intelligencetxt"
-                app:layout_constraintTop_toBottomOf="@+id/Constitution" />
+                app:layout_constraintTop_toBottomOf="@+id/Constitution"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Wisdomtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Wisdom"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Intelligencetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Intelligencetxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Wisdom"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_wisdom"
                 android:padding="5dp"
                 android:hint="@string/text_view_wisdom"
                 app:layout_constraintStart_toEndOf="@id/Wisdomtxt"
-                app:layout_constraintTop_toBottomOf="@+id/Intelligence" />
+                app:layout_constraintTop_toBottomOf="@+id/Intelligence"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Charismatxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Charisma"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Wisdomtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Wisdomtxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Charisma"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_charisma"
                 android:padding="5dp"
                 android:hint="@string/text_view_charisma"
                 app:layout_constraintStart_toEndOf="@id/Charismatxt"
-                app:layout_constraintTop_toBottomOf="@+id/Wisdom" />
+                app:layout_constraintTop_toBottomOf="@+id/Wisdom"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Skills"
@@ -618,26 +625,26 @@
                 android:inputType="textPersonName"
                 android:hint="Skills"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Charisma" />
+                app:layout_constraintTop_toBottomOf="@+id/Charisma"
+                android:layout_marginStart="16dp" />
 
             <TextView
                 android:id="@+id/Appraisetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Appraise"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Skills" />
+                app:layout_constraintTop_toBottomOf="@+id/Skills"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Appraise"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:paddingTop="8dp"
                 android:background="@drawable/border"
@@ -645,1128 +652,1127 @@
                 android:padding="5dp"
                 android:hint="@string/text_view_appraise"
                 app:layout_constraintStart_toEndOf="@id/Appraisetxt"
-                app:layout_constraintTop_toBottomOf="@+id/Skills" />
+                app:layout_constraintTop_toBottomOf="@+id/Skills"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Balancetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Balance"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Appraise" />
+                app:layout_constraintTop_toBottomOf="@+id/Appraise"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Balance"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_balance"
                 android:padding="5dp"
                 android:hint="@string/text_view_balance"
                 app:layout_constraintStart_toEndOf="@id/Balancetxt"
-                app:layout_constraintTop_toBottomOf="@+id/Appraise" />
+                app:layout_constraintTop_toBottomOf="@+id/Appraise"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Blufftxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Bluff"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Balancetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Balancetxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Bluff"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_bluff"
                 android:padding="5dp"
                 android:hint="@string/text_view_bluff"
                 app:layout_constraintStart_toEndOf="@id/Blufftxt"
-                app:layout_constraintTop_toBottomOf="@+id/Balance" />
+                app:layout_constraintTop_toBottomOf="@+id/Balance"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Climbtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Climb"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Blufftxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Blufftxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Climb"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_climb"
                 android:padding="5dp"
                 android:hint="@string/text_view_climb"
                 app:layout_constraintStart_toEndOf="@id/Climbtxt"
-                app:layout_constraintTop_toBottomOf="@+id/Bluff" />
+                app:layout_constraintTop_toBottomOf="@+id/Bluff"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Concentrationtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Concentration"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Climbtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Climbtxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Concentration"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_concentration"
                 android:padding="5dp"
                 android:hint="@string/text_view_concentration"
                 app:layout_constraintStart_toEndOf="@id/Concentrationtxt"
-                app:layout_constraintTop_toBottomOf="@+id/Climb" />
+                app:layout_constraintTop_toBottomOf="@+id/Climb"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Crafttxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Craft"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Concentrationtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Concentrationtxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Craft"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_craft"
                 android:padding="5dp"
                 android:hint="@string/text_view_craft"
                 app:layout_constraintStart_toEndOf="@id/Crafttxt"
-                app:layout_constraintTop_toBottomOf="@+id/Concentration" />
+                app:layout_constraintTop_toBottomOf="@+id/Concentration"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/DecipherScripttxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Decipher Script"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Crafttxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Crafttxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/DecipherScript"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_decipher_script"
                 android:padding="5dp"
                 android:hint="@string/text_view_decipher_script"
                 app:layout_constraintStart_toEndOf="@id/DecipherScripttxt"
-                app:layout_constraintTop_toBottomOf="@+id/Craft" />
+                app:layout_constraintTop_toBottomOf="@+id/Craft"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Diplomacytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Diplomacy"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/DecipherScripttxt" />
+                app:layout_constraintTop_toBottomOf="@+id/DecipherScripttxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Diplomacy"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_diplomacy"
                 android:padding="5dp"
                 android:hint="@string/text_view_diplomacy"
                 app:layout_constraintStart_toEndOf="@id/Diplomacytxt"
-                app:layout_constraintTop_toBottomOf="@+id/DecipherScript" />
+                app:layout_constraintTop_toBottomOf="@+id/DecipherScript"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/DisableDevicetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Disable Device"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Diplomacytxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Diplomacytxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/DisableDevice"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_disable_device"
                 android:padding="5dp"
                 android:hint="@string/text_view_disable_device"
                 app:layout_constraintStart_toEndOf="@id/DisableDevicetxt"
-                app:layout_constraintTop_toBottomOf="@+id/Diplomacy" />
+                app:layout_constraintTop_toBottomOf="@+id/Diplomacy"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Disguisetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Disguise"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/DisableDevicetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/DisableDevicetxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Disguise"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_disguise"
                 android:padding="5dp"
                 android:hint="@string/text_view_disguise"
                 app:layout_constraintStart_toEndOf="@id/Disguisetxt"
-                app:layout_constraintTop_toBottomOf="@+id/DisableDevice" />
+                app:layout_constraintTop_toBottomOf="@+id/DisableDevice"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/EscapeArtisttxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Escape Artist"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Disguisetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Disguisetxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/EscapeArtist"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_escape_artist"
                 android:padding="5dp"
                 android:hint="@string/text_view_escape_artist"
                 app:layout_constraintStart_toEndOf="@id/EscapeArtisttxt"
-                app:layout_constraintTop_toBottomOf="@+id/Disguise" />
+                app:layout_constraintTop_toBottomOf="@+id/Disguise"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Forgerytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Forgery"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EscapeArtisttxt" />
+                app:layout_constraintTop_toBottomOf="@+id/EscapeArtisttxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Forgery"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_forgery"
                 android:padding="5dp"
                 android:hint="@string/text_view_forgery"
                 app:layout_constraintStart_toEndOf="@id/Forgerytxt"
-                app:layout_constraintTop_toBottomOf="@+id/EscapeArtist" />
+                app:layout_constraintTop_toBottomOf="@+id/EscapeArtist"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/GatherInformationtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Gather Information"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Forgerytxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Forgerytxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/GatherInformation"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_gather_information"
                 android:padding="5dp"
                 android:hint="@string/text_view_gather_information"
                 app:layout_constraintStart_toEndOf="@id/GatherInformationtxt"
-                app:layout_constraintTop_toBottomOf="@+id/Forgery" />
+                app:layout_constraintTop_toBottomOf="@+id/Forgery"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/HandleAnimaltxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Handle Animal"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/GatherInformationtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/GatherInformationtxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/HandleAnimal"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_handle_animal"
                 android:padding="5dp"
                 android:hint="@string/text_view_handle_animal"
                 app:layout_constraintStart_toEndOf="@id/HandleAnimaltxt"
-                app:layout_constraintTop_toBottomOf="@+id/GatherInformation" />
+                app:layout_constraintTop_toBottomOf="@+id/GatherInformation"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Healtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Heal"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/HandleAnimaltxt" />
+                app:layout_constraintTop_toBottomOf="@+id/HandleAnimaltxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Heal"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_heal"
                 android:padding="5dp"
                 android:hint="@string/text_view_heal"
                 app:layout_constraintStart_toEndOf="@id/Healtxt"
-                app:layout_constraintTop_toBottomOf="@+id/HandleAnimal" />
+                app:layout_constraintTop_toBottomOf="@+id/HandleAnimal"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Hidetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Hide"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Healtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Healtxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Hide"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_hide"
                 android:padding="5dp"
                 android:hint="@string/text_view_hide"
                 app:layout_constraintStart_toEndOf="@id/Hidetxt"
-                app:layout_constraintTop_toBottomOf="@+id/Heal" />
+                app:layout_constraintTop_toBottomOf="@+id/Heal"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Intimidatetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Intimidate"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Hidetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Hidetxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Intimidate"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_intimidate"
                 android:padding="5dp"
                 android:hint="@string/text_view_intimidate"
                 app:layout_constraintStart_toEndOf="@id/Intimidatetxt"
-                app:layout_constraintTop_toBottomOf="@+id/Hide" />
+                app:layout_constraintTop_toBottomOf="@+id/Hide"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Jumptxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Jump"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Intimidatetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Intimidatetxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Jump"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_jump"
                 android:padding="5dp"
                 android:hint="@string/text_view_jump"
                 app:layout_constraintStart_toEndOf="@id/Jumptxt"
-                app:layout_constraintTop_toBottomOf="@+id/Intimidate" />
+                app:layout_constraintTop_toBottomOf="@+id/Intimidate"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/KnowledgeArcanatxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Knowledge Arcana"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Jumptxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Jumptxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/KnowledgeArcana"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_knowledge_arcana"
                 android:padding="5dp"
                 android:hint="@string/text_view_knowledge_arcana"
                 app:layout_constraintStart_toEndOf="@id/KnowledgeArcanatxt"
-                app:layout_constraintTop_toBottomOf="@+id/Jump" />
+                app:layout_constraintTop_toBottomOf="@+id/Jump"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/KnowledgeArchitecturetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Knowledge Architecture"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeArcanatxt" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeArcanatxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/KnowledgeArchitecture"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_knowledge_architecture"
                 android:padding="5dp"
                 android:hint="@string/text_view_knowledge_architecture"
                 app:layout_constraintStart_toEndOf="@id/KnowledgeArchitecturetxt"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeArcana" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeArcana"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/KnowledgeDungeoneeringtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Knowledge Dungeoneering"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeArchitecturetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeArchitecturetxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/KnowledgeDungeoneering"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_knowledge_dungeoneering"
                 android:padding="5dp"
                 android:hint="@string/text_view_knowledge_dungeoneering"
                 app:layout_constraintStart_toEndOf="@id/KnowledgeDungeoneeringtxt"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeArchitecture" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeArchitecture"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/KnowledgeGeographytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Knowledge Geography"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeDungeoneeringtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeDungeoneeringtxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/KnowledgeGeography"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_knowledge_geography"
                 android:padding="5dp"
                 android:hint="@string/text_view_knowledge_geography"
                 app:layout_constraintStart_toEndOf="@id/KnowledgeGeographytxt"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeDungeoneering" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeDungeoneering"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/KnowledgeHistorytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Knowledge History"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeGeographytxt" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeGeographytxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/KnowledgeHistory"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_knowledge_history"
                 android:padding="5dp"
                 android:hint="@string/text_view_knowledge_history"
                 app:layout_constraintStart_toEndOf="@id/KnowledgeHistorytxt"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeGeography" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeGeography"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/KnowledgeLocaltxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Knowledge Local"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeHistorytxt" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeHistorytxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/KnowledgeLocal"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_knowledge_local"
                 android:padding="5dp"
                 android:hint="@string/text_view_knowledge_local"
                 app:layout_constraintStart_toEndOf="@id/KnowledgeLocaltxt"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeHistory" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeHistory"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/KnowledgeNaturetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Knowledge Nature"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeLocaltxt" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeLocaltxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/KnowledgeNature"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_knowledge_nature"
                 android:padding="5dp"
                 android:hint="@string/text_view_knowledge_nature"
                 app:layout_constraintStart_toEndOf="@id/KnowledgeNaturetxt"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeLocal" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeLocal"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/KnowledgeNobilitytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Knowledge Nobility"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeNaturetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeNaturetxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/KnowledgeNobility"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_knowledge_nobility"
                 android:padding="5dp"
                 android:hint="@string/text_view_knowledge_nobility"
                 app:layout_constraintStart_toEndOf="@id/KnowledgeNobilitytxt"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeNature" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeNature"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/KnowledgeReligiontxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Knowledge Religion"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeNobilitytxt" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeNobilitytxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/KnowledgeReligion"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_knowledge_religion"
                 android:padding="5dp"
                 android:hint="@string/text_view_knowledge_religion"
                 app:layout_constraintStart_toEndOf="@id/KnowledgeReligiontxt"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeNobility" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeNobility"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/KnowledgeThePlanestxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Knowledge The Planes"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeReligiontxt" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeReligiontxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/KnowledgeThePlanes"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_knowledge_the_planes"
                 android:padding="5dp"
                 android:hint="@string/text_view_knowledge_the_planes"
                 app:layout_constraintStart_toEndOf="@id/KnowledgeThePlanestxt"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeReligion" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeReligion"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Listentxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Listen"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeThePlanestxt" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeThePlanestxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Listen"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_listen"
                 android:padding="5dp"
                 android:hint="@string/text_view_ride"
                 app:layout_constraintStart_toEndOf="@id/Listentxt"
-                app:layout_constraintTop_toBottomOf="@+id/KnowledgeThePlanes" />
+                app:layout_constraintTop_toBottomOf="@+id/KnowledgeThePlanes"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/MoveSilentlytxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Move Silently"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Listentxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Listentxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/MoveSilently"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_move_silently"
                 android:padding="5dp"
                 android:hint="@string/text_view_move_silently"
                 app:layout_constraintStart_toEndOf="@id/MoveSilentlytxt"
-                app:layout_constraintTop_toBottomOf="@+id/Listen" />
+                app:layout_constraintTop_toBottomOf="@+id/Listen"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/OpenLocktxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Open Lock"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/MoveSilentlytxt" />
+                app:layout_constraintTop_toBottomOf="@+id/MoveSilentlytxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/OpenLock"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_open_lock"
                 android:padding="5dp"
                 android:hint="@string/text_view_open_lock"
                 app:layout_constraintStart_toEndOf="@id/OpenLocktxt"
-                app:layout_constraintTop_toBottomOf="@+id/MoveSilently" />
+                app:layout_constraintTop_toBottomOf="@+id/MoveSilently"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Performtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Perform"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/OpenLocktxt" />
+                app:layout_constraintTop_toBottomOf="@+id/OpenLocktxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Perform"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_perform"
                 android:padding="5dp"
                 android:hint="@string/text_view_perform"
                 app:layout_constraintStart_toEndOf="@id/Performtxt"
-                app:layout_constraintTop_toBottomOf="@+id/OpenLock" />
+                app:layout_constraintTop_toBottomOf="@+id/OpenLock"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Professiontxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Profession"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Performtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Performtxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Profession"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_profession"
                 android:padding="5dp"
                 android:hint="@string/text_view_profession"
                 app:layout_constraintStart_toEndOf="@id/Professiontxt"
-                app:layout_constraintTop_toBottomOf="@+id/Perform" />
+                app:layout_constraintTop_toBottomOf="@+id/Perform"
+                tools:layout_editor_absoluteX="134dp" />
 
 
             <TextView
                 android:id="@+id/Ridetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Ride"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Professiontxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Professiontxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Ride"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_ride"
                 android:padding="5dp"
                 android:hint="@string/text_view_ride"
                 app:layout_constraintStart_toEndOf="@id/Ridetxt"
-                app:layout_constraintTop_toBottomOf="@+id/Profession" />
+                app:layout_constraintTop_toBottomOf="@+id/Profession"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Searchtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Search"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Ridetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Ridetxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Search"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_search"
                 android:padding="5dp"
                 android:hint="@string/text_view_search"
                 app:layout_constraintStart_toEndOf="@id/Searchtxt"
-                app:layout_constraintTop_toBottomOf="@+id/Ride" />
+                app:layout_constraintTop_toBottomOf="@+id/Ride"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/SenseMotivetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Sense Motive"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Searchtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Searchtxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/SenseMotive"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_sense_motive"
                 android:padding="5dp"
                 android:hint="@string/text_view_sense_motive"
                 app:layout_constraintStart_toEndOf="@id/SenseMotivetxt"
-                app:layout_constraintTop_toBottomOf="@+id/Search" />
+                app:layout_constraintTop_toBottomOf="@+id/Search"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/SleightOfHandtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Sleight of Hand"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SenseMotivetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/SenseMotivetxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/SleightOfHand"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_sleight_of_hand"
                 android:padding="5dp"
                 android:hint="@string/text_view_sleight_of_hand"
                 app:layout_constraintStart_toEndOf="@id/SleightOfHandtxt"
-                app:layout_constraintTop_toBottomOf="@+id/SenseMotive" />
+                app:layout_constraintTop_toBottomOf="@+id/SenseMotive"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Spellcrafttxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Spellcraft"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/SleightOfHandtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/SleightOfHandtxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Spellcraft"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_spellcraft"
                 android:padding="5dp"
                 android:hint="@string/text_view_spellcraft"
                 app:layout_constraintStart_toEndOf="@id/Spellcrafttxt"
-                app:layout_constraintTop_toBottomOf="@+id/SleightOfHand" />
+                app:layout_constraintTop_toBottomOf="@+id/SleightOfHand"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Spottxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Spot"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Spellcrafttxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Spellcrafttxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Spot"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_spot"
                 android:padding="5dp"
                 android:hint="@string/text_view_spot"
                 app:layout_constraintStart_toEndOf="@id/Spottxt"
-                app:layout_constraintTop_toBottomOf="@+id/Spellcraft" />
+                app:layout_constraintTop_toBottomOf="@+id/Spellcraft"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Survivaltxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Survival"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Spottxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Spottxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Survival"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_survival"
                 android:padding="5dp"
                 android:hint="@string/text_view_survival"
                 app:layout_constraintStart_toEndOf="@id/Survivaltxt"
-                app:layout_constraintTop_toBottomOf="@+id/Spot" />
+                app:layout_constraintTop_toBottomOf="@+id/Spot"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Swimtxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Swim"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Survivaltxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Survivaltxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Swim"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_swim"
                 android:padding="5dp"
                 android:hint="@string/text_view_swim"
                 app:layout_constraintStart_toEndOf="@id/Swimtxt"
-                app:layout_constraintTop_toBottomOf="@+id/Survival" />
+                app:layout_constraintTop_toBottomOf="@+id/Survival"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/Tumbletxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Tumble"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Swimtxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Swimtxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/Tumble"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_tumble"
                 android:padding="5dp"
                 android:hint="@string/text_view_tumble"
                 app:layout_constraintStart_toEndOf="@id/Tumbletxt"
-                app:layout_constraintTop_toBottomOf="@+id/Swim" />
+                app:layout_constraintTop_toBottomOf="@+id/Swim"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/UseMagicDevicetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Use Magic Device"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Tumbletxt" />
+                app:layout_constraintTop_toBottomOf="@+id/Tumbletxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/UseMagicDevice"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_use_magic_device"
                 android:hint="@string/text_view_use_magic_device"
                 android:padding="5dp"
                 app:layout_constraintStart_toEndOf="@id/UseMagicDevicetxt"
-                app:layout_constraintTop_toBottomOf="@+id/Tumble" />
+                app:layout_constraintTop_toBottomOf="@+id/Tumble"
+                tools:layout_editor_absoluteX="134dp" />
 
             <TextView
                 android:id="@+id/UseRopetxt"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
-                android:layout_marginBottom="16dp"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="Use Rope"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/UseMagicDevicetxt" />
+                app:layout_constraintTop_toBottomOf="@+id/UseMagicDevicetxt"
+                tools:layout_editor_absoluteX="26dp" />
 
             <EditText
                 android:id="@+id/UseRope"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
-                android:layout_marginBottom="16dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border"
                 android:contentDescription="@string/text_view_use_rope"
                 android:padding="5dp"
                 android:hint="@string/text_view_use_rope"
                 app:layout_constraintStart_toEndOf="@id/UseRopetxt"
-                app:layout_constraintTop_toBottomOf="@+id/UseMagicDevice" />
+                app:layout_constraintTop_toBottomOf="@+id/UseMagicDevice"
+                tools:layout_editor_absoluteX="134dp" />
 
 
         </android.support.constraint.ConstraintLayout>
