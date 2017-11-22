@@ -79,6 +79,7 @@
 
             <EditText
                 android:id="@+id/AC"
+                android:imeOptions="actionDone"
                 android:layout_width="50dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="16dp"
@@ -118,6 +119,7 @@
 
             <EditText
                 android:id="@+id/HitPoints"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="16dp"
@@ -131,6 +133,7 @@
 
             <EditText
                 android:id="@+id/eye"
+                android:imeOptions="actionDone"
                 android:layout_width="102dp"
                 android:layout_height="36dp"
                 android:background="@drawable/border"
@@ -143,6 +146,7 @@
 
             <EditText
                 android:id="@+id/skin"
+                android:imeOptions="actionDone"
                 android:layout_width="102dp"
                 android:layout_height="36dp"
                 android:background="@drawable/border"
@@ -155,6 +159,7 @@
 
             <EditText
                 android:id="@+id/hair"
+                android:imeOptions="actionDone"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
                 android:background="@drawable/border"
@@ -167,6 +172,7 @@
 
             <EditText
                 android:id="@+id/gender"
+                android:imeOptions="actionDone"
                 android:layout_width="100dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="16dp"
@@ -240,6 +246,7 @@
 
             <EditText
                 android:id="@+id/player"
+                android:imeOptions="actionDone"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
                 android:background="@drawable/border"
@@ -266,6 +273,7 @@
 
             <EditText
                 android:id="@+id/cClass"
+                android:imeOptions="actionDone"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
                 android:layout_marginLeft="16dp"
@@ -292,6 +300,7 @@
 
             <EditText
                 android:id="@+id/classLevel"
+                android:imeOptions="actionDone"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
                 android:background="@drawable/border"
@@ -317,6 +326,7 @@
 
             <EditText
                 android:id="@+id/alignment"
+                android:imeOptions="actionDone"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
                 android:background="@drawable/border"
@@ -342,6 +352,7 @@
 
             <EditText
                 android:id="@+id/religion"
+                android:imeOptions="actionDone"
                 android:layout_width="150dp"
                 android:layout_height="36dp"
                 android:background="@drawable/border"
@@ -384,6 +395,7 @@
 
             <EditText
                 android:id="@+id/height"
+                android:imeOptions="actionDone"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
                 android:layout_marginLeft="16dp"
@@ -411,6 +423,7 @@
 
             <EditText
                 android:id="@+id/weight"
+                android:imeOptions="actionDone"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
                 android:background="@drawable/border"
@@ -436,6 +449,7 @@
 
             <EditText
                 android:id="@+id/race"
+                android:imeOptions="actionDone"
                 android:layout_width="100dp"
                 android:layout_height="36dp"
                 android:background="@drawable/border"
@@ -474,6 +488,7 @@
 
             <EditText
                 android:id="@+id/Strength"
+                android:imeOptions="actionDone"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -500,6 +515,7 @@
 
             <EditText
                 android:id="@+id/Dexterity"
+                android:imeOptions="actionDone"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -526,6 +542,7 @@
 
             <EditText
                 android:id="@+id/Constitution"
+                android:imeOptions="actionDone"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -552,6 +569,7 @@
 
             <EditText
                 android:id="@+id/Intelligence"
+                android:imeOptions="actionDone"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -578,6 +596,7 @@
 
             <EditText
                 android:id="@+id/Wisdom"
+                android:imeOptions="actionDone"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -604,6 +623,7 @@
 
             <EditText
                 android:id="@+id/Charisma"
+                android:imeOptions="actionDone"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -643,6 +663,7 @@
 
             <EditText
                 android:id="@+id/Appraise"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="16dp"
@@ -670,6 +691,7 @@
 
             <EditText
                 android:id="@+id/Balance"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -696,6 +718,7 @@
 
             <EditText
                 android:id="@+id/Bluff"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -722,6 +745,7 @@
 
             <EditText
                 android:id="@+id/Climb"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -748,6 +772,7 @@
 
             <EditText
                 android:id="@+id/Concentration"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -774,6 +799,7 @@
 
             <EditText
                 android:id="@+id/Craft"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -800,6 +826,7 @@
 
             <EditText
                 android:id="@+id/DecipherScript"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -826,6 +853,7 @@
 
             <EditText
                 android:id="@+id/Diplomacy"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -852,6 +880,7 @@
 
             <EditText
                 android:id="@+id/DisableDevice"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -878,6 +907,7 @@
 
             <EditText
                 android:id="@+id/Disguise"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -904,6 +934,7 @@
 
             <EditText
                 android:id="@+id/EscapeArtist"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -930,6 +961,7 @@
 
             <EditText
                 android:id="@+id/Forgery"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -956,6 +988,7 @@
 
             <EditText
                 android:id="@+id/GatherInformation"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -982,6 +1015,7 @@
 
             <EditText
                 android:id="@+id/HandleAnimal"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1008,6 +1042,7 @@
 
             <EditText
                 android:id="@+id/Heal"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1034,6 +1069,7 @@
 
             <EditText
                 android:id="@+id/Hide"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1060,6 +1096,7 @@
 
             <EditText
                 android:id="@+id/Intimidate"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1086,6 +1123,7 @@
 
             <EditText
                 android:id="@+id/Jump"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1112,6 +1150,7 @@
 
             <EditText
                 android:id="@+id/KnowledgeArcana"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1138,6 +1177,7 @@
 
             <EditText
                 android:id="@+id/KnowledgeArchitecture"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1164,6 +1204,7 @@
 
             <EditText
                 android:id="@+id/KnowledgeDungeoneering"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1190,6 +1231,7 @@
 
             <EditText
                 android:id="@+id/KnowledgeGeography"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1216,6 +1258,7 @@
 
             <EditText
                 android:id="@+id/KnowledgeHistory"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1242,6 +1285,7 @@
 
             <EditText
                 android:id="@+id/KnowledgeLocal"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1268,6 +1312,7 @@
 
             <EditText
                 android:id="@+id/KnowledgeNature"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1294,6 +1339,7 @@
 
             <EditText
                 android:id="@+id/KnowledgeNobility"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1320,6 +1366,7 @@
 
             <EditText
                 android:id="@+id/KnowledgeReligion"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1346,6 +1393,7 @@
 
             <EditText
                 android:id="@+id/KnowledgeThePlanes"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1372,6 +1420,7 @@
 
             <EditText
                 android:id="@+id/Listen"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1398,6 +1447,7 @@
 
             <EditText
                 android:id="@+id/MoveSilently"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1424,6 +1474,7 @@
 
             <EditText
                 android:id="@+id/OpenLock"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1450,6 +1501,7 @@
 
             <EditText
                 android:id="@+id/Perform"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1476,6 +1528,7 @@
 
             <EditText
                 android:id="@+id/Profession"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1503,6 +1556,7 @@
 
             <EditText
                 android:id="@+id/Ride"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1529,6 +1583,7 @@
 
             <EditText
                 android:id="@+id/Search"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1555,6 +1610,7 @@
 
             <EditText
                 android:id="@+id/SenseMotive"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1581,6 +1637,7 @@
 
             <EditText
                 android:id="@+id/SleightOfHand"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1607,6 +1664,7 @@
 
             <EditText
                 android:id="@+id/Spellcraft"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1633,6 +1691,7 @@
 
             <EditText
                 android:id="@+id/Spot"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1659,6 +1718,7 @@
 
             <EditText
                 android:id="@+id/Survival"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1685,6 +1745,7 @@
 
             <EditText
                 android:id="@+id/Swim"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1711,6 +1772,7 @@
 
             <EditText
                 android:id="@+id/Tumble"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1737,6 +1799,7 @@
 
             <EditText
                 android:id="@+id/UseMagicDevice"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"
@@ -1763,6 +1826,7 @@
 
             <EditText
                 android:id="@+id/UseRope"
+                android:imeOptions="actionDone"
                 android:layout_width="200dp"
                 android:layout_height="36dp"
                 android:layout_marginTop="8dp"

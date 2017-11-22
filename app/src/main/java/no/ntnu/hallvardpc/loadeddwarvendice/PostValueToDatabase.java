@@ -46,11 +46,13 @@ public class PostValueToDatabase extends AsyncTask<PostValueToDatabase.PostValue
                 BufferedWriter bw = new BufferedWriter(
                         new OutputStreamWriter(con.getOutputStream(),"UTF-8"));
                 JsonWriter jw = new JsonWriter(bw); // Android JSON support library
-                jw.beginObject()
-                        .name("text")
-                        .value(value.getText())
-                        .endObject()
-                        .close();
+                jw.beginObject();
+                jw.name("name").value(value.getName());
+                jw.name("text").value(value.getText());
+
+                    jw.endObject();
+
+                    jw.close();
 
                 // Get response from server
                 StringBuilder result = new StringBuilder();
@@ -81,13 +83,17 @@ public class PostValueToDatabase extends AsyncTask<PostValueToDatabase.PostValue
     public static class PostValue {
         String url;
         String text;
+        String name;
 
-        public PostValue(String url, String text) {
+        public PostValue(String url, String text, String name) {
             this.url = url;
+            this.name = name;
             this.text = text;
 
 
         }
+
+        public String getName(){return name;}
 
         public String getUrl() {
             return url;
