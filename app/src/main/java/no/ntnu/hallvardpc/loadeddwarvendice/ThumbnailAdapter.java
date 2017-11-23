@@ -18,17 +18,18 @@ import java.util.List;
 
 public class ThumbnailAdapter extends RecyclerView.Adapter<ThumbnailAdapter.ThumbnailViewHolder> {
     Context context;
-
+    List<Integer> list;
     OnClickListener listener;
 
     public interface OnClickListener {
         void onClick(int position);
     }
 
-    public ThumbnailAdapter(Context context) {
+    public ThumbnailAdapter(Context context, List<Integer> list)
+    {
+        this.list = list;
         this.context = context;
     }
-
     @Override
     public ThumbnailAdapter.ThumbnailViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
@@ -47,7 +48,7 @@ public class ThumbnailAdapter extends RecyclerView.Adapter<ThumbnailAdapter.Thum
     @Override
     public int getItemCount() {
 
-        return 1;
+        return list.size();
     }
 
 
