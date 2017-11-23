@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 public class CharacterSheetActivity extends AppCompatActivity {
-    boolean offline = true;
+    boolean offline = false;
 
 
     @Override

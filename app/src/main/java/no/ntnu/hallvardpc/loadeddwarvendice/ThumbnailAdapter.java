@@ -50,7 +50,8 @@ public class ThumbnailAdapter extends RecyclerView.Adapter<ThumbnailAdapter.Thum
     }
 
 
-    public void setSheets() {
+    public void setSheets()
+    {
         notifyDataSetChanged();
     }
 
