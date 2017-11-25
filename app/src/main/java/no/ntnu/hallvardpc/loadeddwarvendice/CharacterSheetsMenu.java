@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -43,6 +44,10 @@ public class CharacterSheetsMenu extends AppCompatActivity {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
+        if (list == null)
+        {
+            list = new ArrayList<Integer>();
+        }
 
 
         final Button createNewSheetBtn = (Button) findViewById(R.id.buttonNewCharacterSheet);
@@ -67,6 +72,11 @@ public class CharacterSheetsMenu extends AppCompatActivity {
                 adapter.setSheets();
             }
         });
+
+        if(list.isEmpty())
+        {
+            list.add(1);
+        }
 
         RecyclerView rv = (RecyclerView) findViewById(R.id.thumbnails);
         rv.setLayoutManager(new GridLayoutManager(this, 3));
