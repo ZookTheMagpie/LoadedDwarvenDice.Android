@@ -11,25 +11,31 @@
         android:id="@+id/spinnerCustomSelection"
         android:layout_width="228dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="24dp"
         android:background="@android:drawable/btn_dropdown"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="289dp" />
+        app:layout_constraintBottom_toTopOf="@+id/animatedDiceRollSelection"
+        app:layout_constraintEnd_toStartOf="@+id/createNew"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Spinner
         android:id="@+id/spinnerDiceType"
         android:layout_width="97dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginLeft="16dp"
         android:background="@android:drawable/btn_dropdown"
-        app:layout_constraintEnd_toStartOf="@+id/numberOfDice"
-        tools:layout_editor_absoluteY="87dp" />
+        app:layout_constraintBottom_toTopOf="@+id/roll"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Spinner
         android:id="@+id/spinnerAnimatedDiceType"
         android:layout_width="97dp"
         android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
         android:background="@android:drawable/btn_dropdown"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/animatedNumberOfDice"
         tools:layout_editor_absoluteY="430dp" />
 
     <NumberPicker
@@ -56,10 +62,11 @@
         android:id="@+id/animatedNumberOfDice"
         android:layout_width="94dp"
         android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
         android:background="@android:color/darker_gray"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="127dp"
+        app:layout_constraintEnd_toStartOf="@+id/animatedRollButton"
         tools:layout_editor_absoluteY="430dp" />
 
     <TextView
@@ -70,7 +77,7 @@
         android:text="Dice Type: "
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toTopOf="@+id/spinnerDiceType"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/NumberOfDiceTXT"
@@ -87,10 +94,11 @@
         android:layout_width="81dp"
         android:layout_height="21dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
         android:text="Dice Type: "
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toTopOf="@+id/spinnerAnimatedDiceType"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/AnimatedNumberOfDiceTXT"
@@ -117,31 +125,36 @@
         android:layout_width="9dp"
         android:layout_height="18dp"
         android:text="+"
+        android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:textAlignment="center"
         tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="87dp" />
+        tools:layout_editor_absoluteY="83dp" />
 
     <TextView
         android:id="@+id/minusTXT"
         android:layout_width="9dp"
         android:layout_height="18dp"
+        android:layout_marginStart="12dp"
         android:text="-"
+        android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:textAlignment="center"
-        tools:layout_editor_absoluteX="245dp"
+        app:layout_constraintStart_toEndOf="@+id/numberOfDice"
         app:layout_constraintTop_toBottomOf="@+id/plusTXT" />
 
     <Button
         android:id="@+id/roll"
         android:layout_width="119dp"
         android:layout_height="59dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
         android:text="Roll"
         android:textSize="15sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="181dp" />
+        app:layout_constraintBottom_toTopOf="@+id/preMadeRollText"
+        app:layout_constraintEnd_toStartOf="@+id/result"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/resultTXT"
@@ -158,21 +171,24 @@
         android:id="@+id/result"
         android:layout_width="117dp"
         android:layout_height="61dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/back"
         android:gravity="center"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="181dp" />
+        app:layout_constraintBottom_toTopOf="@+id/rollCustom"
+        tools:layout_editor_absoluteX="166dp" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:checkedButton="@id/radioButtonPlus"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="86dp">
+        app:layout_constraintEnd_toStartOf="@+id/modifier"
+        tools:layout_editor_absoluteY="83dp">
 
         <RadioButton
             android:id="@+id/radioButtonMinus"
@@ -203,9 +219,10 @@
         android:id="@+id/rollCustom"
         android:layout_width="123dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
         android:text="Roll Custom:"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="269dp" />
+        app:layout_constraintBottom_toTopOf="@+id/createNew"
+        tools:layout_editor_absoluteX="254dp" />
 
     <Button
         android:id="@+id/animatedRollButton"
@@ -219,22 +236,26 @@
         android:id="@+id/preMadeRollText"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginLeft="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Pre-made Dice Roll:"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="249dp" />
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCustomSelection"
+        app:layout_constraintEnd_toStartOf="@+id/rollCustom"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <EditText
         android:id="@+id/animatedDiceRollSelection"
         android:layout_width="194dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Animated Dice Roll Selection:"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="351dp" />
+        app:layout_constraintBottom_toTopOf="@+id/AnimatedDiceTypeTXT"
+        tools:layout_editor_absoluteX="16dp" />
 
 </android.support.constraint.ConstraintLayout>
