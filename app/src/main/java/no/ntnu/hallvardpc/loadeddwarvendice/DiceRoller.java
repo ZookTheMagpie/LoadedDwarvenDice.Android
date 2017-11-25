@@ -1,6 +1,7 @@
 package no.ntnu.hallvardpc.loadeddwarvendice;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +17,7 @@ import android.widget.TextView;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- *
+ * THE dice roller function!
  */
 public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     Spinner diceTypeSpinner;
@@ -25,7 +26,11 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
     NumberPicker modifier;
     NumberPicker numberOfDice;
     Button rollDice;
+
+    Button animatedDiceRoll;
     TextView diceResult;
+    Spinner animatedDiceTypeSpinner;
+    NumberPicker animatedNumberOfDice;
 
     Integer diceTypeValue;
 
@@ -33,9 +38,9 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_dice_roller);
 
-        diceTypeSpinner = (Spinner) findViewById(R.id.spinnerDiceType);
+        this.diceTypeSpinner = (Spinner) findViewById(R.id.spinnerDiceType);
         this.minus = (RadioButton) findViewById(R.id.radioButtonMinus);
         this.plus = (RadioButton) findViewById(R.id.radioButtonPlus);
         this.modifier = (NumberPicker) findViewById(R.id.modifier);
@@ -43,20 +48,34 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
         this.rollDice = (Button) findViewById(R.id.roll);
         this.diceResult = (TextView) findViewById(R.id.result);
 
+        this.animatedDiceRoll = (Button) findViewById(R.id.animatedRollButton);
+        this.animatedDiceTypeSpinner = (Spinner) findViewById(R.id.spinnerAnimatedDiceType);
+        this.animatedNumberOfDice = (NumberPicker) findViewById(R.id.animatedNumberOfDice);
+
+
         //Dice type selection
-        ArrayAdapter<CharSequence> diceAdapter = ArrayAdapter.createFromResource(this, R.array.diceTypeOptions, android.R.layout.simple_spinner_item);
+        final ArrayAdapter<CharSequence> diceAdapter = ArrayAdapter.createFromResource(this, R.array.diceTypeOptions, android.R.layout.simple_spinner_item);
         diceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         diceTypeSpinner.setAdapter(diceAdapter);
         diceTypeSpinner.setOnItemSelectedListener(this);
 
-        //Setting modifier range, current range 0-100
+        //Animated dice type selection
+        final ArrayAdapter<CharSequence> animatedDiceAdapter = ArrayAdapter.createFromResource(this, R.array.diceTypeOptions, android.R.layout.simple_spinner_item);
+        animatedDiceAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        animatedDiceTypeSpinner.setAdapter(animatedDiceAdapter);
+        animatedDiceTypeSpinner.setOnItemSelectedListener(this);
+
+        //Setting animated number of dice range, current range: 1-9
+        animatedNumberOfDice.setMinValue(1);
+        animatedNumberOfDice.setMaxValue(9);
+
+        //Setting modifier range, current range: 0-100
         modifier.setMinValue(0);
         modifier.setMaxValue(100);
 
-        //Setting number of dice range, current range 1-100
+        //Setting number of dice range, current range: 1-100
         numberOfDice.setMinValue(1);
         numberOfDice.setMaxValue(100);
-
 
         //Rolling the dice
         rollDice.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +85,28 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
             }
         });
 
+        animatedDiceRoll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                animatedDiceRollSelected();
+            }
+        });
+    }
 
+    /**
+     * Reads selected dice number and type (sends an error message if these are not present)
+     * Bundles the dice type and amount
+     * Sends the bundled information with the animated dice roll activity
+     */
+    private void animatedDiceRollSelected()
+    {
+        Intent intent = new Intent(DiceRoller.this, animatedDiceRoll.class);
+        Bundle b = new Bundle();
+        b.putInt("DiceType", (Integer) animatedDiceTypeSpinner.getSelectedItem());
+        b.putInt("DiceAmount", animatedNumberOfDice.getValue());
+
+        intent.putExtras(b);
+        startActivity(intent);
     }
 
     /**

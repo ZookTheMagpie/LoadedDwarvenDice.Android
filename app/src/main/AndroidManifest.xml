@@ -36,10 +36,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
+        <activity
+            android:name = ".animatedDiceRoll"
+            android:parentActivityName=".DiceRoller">
+
+        </activity>
+
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
         <activity android:name=".CharacterSheetActivity"></activity>
     </application>
-
 </manifest>
