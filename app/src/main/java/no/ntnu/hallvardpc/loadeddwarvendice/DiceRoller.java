@@ -100,7 +100,7 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
      */
     private void animatedDiceRollSelected()
     {
-        Intent intent = new Intent(DiceRoller.this, animatedDiceRoll.class);
+        Intent intent = new Intent(DiceRoller.this, AnimatedDiceRoll.class);
         Bundle b = new Bundle();
         b.putInt("DiceType", (Integer) animatedDiceTypeSpinner.getSelectedItem());
         b.putInt("DiceAmount", animatedNumberOfDice.getValue());
@@ -177,7 +177,7 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
      */
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        diceTypeValue = (Integer) parent.getItemAtPosition(position);
+        diceTypeValue = Integer.getInteger((String) parent.getItemAtPosition(position));
     }
 
     @Override

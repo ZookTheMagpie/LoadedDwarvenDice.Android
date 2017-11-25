@@ -19,8 +19,9 @@
         android:id="@+id/spinnerDiceType"
         android:layout_width="97dp"
         android:layout_height="30dp"
+        android:layout_marginEnd="24dp"
         android:background="@android:drawable/btn_dropdown"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/numberOfDice"
         tools:layout_editor_absoluteY="87dp" />
 
     <Spinner
