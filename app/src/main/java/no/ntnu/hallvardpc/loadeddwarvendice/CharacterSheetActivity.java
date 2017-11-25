@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 public class CharacterSheetActivity extends AppCompatActivity {
-    boolean offline = true;
+    boolean offline = false;
 
 
     @Override
@@ -107,7 +107,7 @@ public class CharacterSheetActivity extends AppCompatActivity {
                 protected void onPostExecute(Boolean status) {
                     System.out.println("Got on post value " + status);
                 }
-            }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111:8080/LoadedDwarvenDice.Server-1.0-SNAPSHOT/webresources/characterSheets/add?name = 1", text, name));
+            }.execute(new PostValueToDatabase.PostValue("http://158.38.101.111:8080/LoadedDwarvenDice.Server-1.0-SNAPSHOT/webresources/characterSheets/add?name=1", text, name));
         }
     }
 

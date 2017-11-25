@@ -18,17 +18,18 @@ import java.util.List;
 
 public class ThumbnailAdapter extends RecyclerView.Adapter<ThumbnailAdapter.ThumbnailViewHolder> {
     Context context;
-
+    List<Integer> list;
     OnClickListener listener;
 
     public interface OnClickListener {
         void onClick(int position);
     }
 
-    public ThumbnailAdapter(Context context) {
+    public ThumbnailAdapter(Context context, List<Integer> list)
+    {
+        this.list = list;
         this.context = context;
     }
-
     @Override
     public ThumbnailAdapter.ThumbnailViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
@@ -38,19 +39,21 @@ public class ThumbnailAdapter extends RecyclerView.Adapter<ThumbnailAdapter.Thum
 
     @Override
     public void onBindViewHolder(ThumbnailAdapter.ThumbnailViewHolder holder, int position) {
-        Picasso.with(context)
+        /*Picasso.with(context)
                 .load(Uri.parse("https://image.slidesharecdn.com/krisddfillable3-5charsheet-090608011808-phpapp02/95/kris-dd-fillable-35-char-sheet-1-728.jpg?cb=1244423900" + "?width=400"))
-                .into(holder.thumb);
+                .into(holder.thumb);*/
+        holder.thumb.setImageResource(R.drawable.character_sheet);
     }
 
     @Override
     public int getItemCount() {
 
-        return 1;
+        return list.size();
     }
 
 
-    public void setSheets() {
+    public void setSheets()
+    {
         notifyDataSetChanged();
     }
 
