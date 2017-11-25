@@ -24,13 +24,13 @@ public class CharacterSheetsMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_character_sheets_menu);
 
-        /**final Button buttonCharacterSheets = (Button) findViewById(R.id.buttontemporary);
+        final Button buttonCharacterSheets = (Button) findViewById(R.id.buttontemporary);
          buttonCharacterSheets.setOnClickListener(new View.OnClickListener() {
          public void onClick(View v) {
          Intent intent = new Intent(CharacterSheetsMenu.this, CharacterSheetActivity.class);
          startActivity(intent);
          }
-         });*/
+         });
 
         try {
             new LoadIDs(new LoadIDs.OnPostExecute() {
