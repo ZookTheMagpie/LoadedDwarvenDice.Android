@@ -218,7 +218,7 @@
         app:layout_constraintStart_toEndOf="@+id/animatedNumberOfDice"
         app:layout_constraintTop_toBottomOf="@+id/AnimatedNumberOfDiceTXT" />
 
-    <EditText
+    <TextView
         android:id="@+id/preMadeRollText"
         android:layout_width="160dp"
         android:layout_height="wrap_content"

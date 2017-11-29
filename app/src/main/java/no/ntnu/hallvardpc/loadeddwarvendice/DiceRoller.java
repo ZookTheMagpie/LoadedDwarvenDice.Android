@@ -66,9 +66,9 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
         animatedDiceTypeSpinner.setAdapter(animatedDiceAdapter);
         animatedDiceTypeSpinner.setOnItemSelectedListener(this);
 
-        //Setting animated number of dice range, current range: 1-100
+        //Setting animated number of dice range, current range: 1-9
         animatedNumberOfDice.setMinValue(1);
-        animatedNumberOfDice.setMaxValue(100);
+        animatedNumberOfDice.setMaxValue(9);
 
         //Setting modifier range, current range: 0-100
         modifier.setMinValue(0);

@@ -11,8 +11,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.widget.GridView;
-
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
@@ -22,6 +20,7 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 
 public class AnimatedDiceRoll extends Activity {
+    MediaPlayer mediaPlayer;
     private SensorManager sensorManager;
     private float accel; // acceleration apart from gravity
     private float accelCurrent; // current acceleration including gravity
@@ -31,7 +30,6 @@ public class AnimatedDiceRoll extends Activity {
     int diceTypeValue;
 
     private GridView diceOnScreen;
-
     private List<Integer> diceIDs;
 
     @Override
@@ -41,6 +39,8 @@ public class AnimatedDiceRoll extends Activity {
 
         Bundle b = getIntent().getExtras();
         this.numberOfDice = b.getInt("DiceAmount");
+
+        mediaPlayer = MediaPlayer.create(AnimatedDiceRoll.this, R.raw.dice_rolling);
 
         //As not all dice types are in, sets diceTypeValue to 6
         if (b.getInt("DiceType") != 6) {
@@ -55,7 +55,6 @@ public class AnimatedDiceRoll extends Activity {
         for (int i = 0; i < numberOfDice; i++) {
             addDiceID(1);
         }
-        System.out.println("I: " + diceIDs);
         this.diceOnScreen = findViewById(R.id.diceOnScreenGridView);
         diceOnScreen.setAdapter(new ImageAdapter(this, numberOfDice, diceIDs));
 
@@ -65,12 +64,6 @@ public class AnimatedDiceRoll extends Activity {
         accel = 0.00f;
         accelCurrent = SensorManager.GRAVITY_EARTH;
         accelLast = SensorManager.GRAVITY_EARTH;
-
-        if (accel > 12)
-        {
-            diceIDs.clear();
-            rollDice();
-        }
     }
 
     /**
@@ -87,13 +80,6 @@ public class AnimatedDiceRoll extends Activity {
                 }
             }
         }).start();
-       /* MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.dice_rolling);
-        try {
-            mediaPlayer.prepare();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        mediaPlayer.start();*/
         diceOnScreen.setAdapter(new ImageAdapter(this, numberOfDice, diceIDs));
     }
 
@@ -126,6 +112,13 @@ public class AnimatedDiceRoll extends Activity {
             accelCurrent = (float) Math.sqrt((double) (x * x + y * y + z * z));
             float delta = accelCurrent - accelLast;
             accel = accel * 0.9f + delta; // perform low-cut filter
+
+            if (accel > 12)
+            {
+                diceIDs.clear();
+                mediaPlayer.start();
+                rollDice();
+            }
         }
 
         public void onAccuracyChanged(Sensor sensor, int accuracy) {
@@ -138,6 +131,7 @@ public class AnimatedDiceRoll extends Activity {
     }
 
     public void onPause() {
+        mediaPlayer.pause();
         sensorManager.unregisterListener(sensorListener);
         super.onPause();
     }
