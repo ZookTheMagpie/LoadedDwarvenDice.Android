@@ -40,7 +40,7 @@ public class AnimatedDiceRoll extends Activity {
         Bundle b = getIntent().getExtras();
         this.numberOfDice = b.getInt("DiceAmount");
 
-        mediaPlayer = MediaPlayer.create(AnimatedDiceRoll.this, R.raw.dice_rolling);
+        mediaPlayer = MediaPlayer.create(AnimatedDiceRoll.this, R.raw.dice_landing);
 
         //As not all dice types are in, sets diceTypeValue to 6
         if (b.getInt("DiceType") != 6) {

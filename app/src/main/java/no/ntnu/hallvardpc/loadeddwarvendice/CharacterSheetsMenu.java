@@ -77,12 +77,13 @@ public class CharacterSheetsMenu extends AppCompatActivity {
         {
             list.add(1);
         }
-
+/**
         RecyclerView rv = (RecyclerView) findViewById(R.id.thumbnails);
         rv.setLayoutManager(new GridLayoutManager(this, 3));
         adapter = new ThumbnailAdapter(this, list);
         rv.setAdapter(adapter);
         adapter.setSheets();
+ */
 
     }
 }
