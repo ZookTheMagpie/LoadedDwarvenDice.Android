@@ -43,7 +43,7 @@ class ImageAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         ImageView diceImage = new ImageView(context);
-        diceImage.setPadding(10, 30, 10, 30);
+        diceImage.setPadding(10, 10, 10, 10);
 
         diceImage.setAdjustViewBounds(true);
         diceImage.setMaxHeight(256);
