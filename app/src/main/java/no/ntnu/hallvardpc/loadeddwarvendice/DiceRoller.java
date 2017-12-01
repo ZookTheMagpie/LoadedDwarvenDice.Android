@@ -117,7 +117,8 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
     private void diceResult() {
         int modifierValue = modifier.getValue();
         int numberOfDiceValue = numberOfDice.getValue();
-        Integer diceTypeValue = Integer.getInteger((String) diceTypeSpinner.getSelectedItem());
+        Integer diceTypeValue = Integer.getInteger((String)diceTypeSpinner.getSelectedItem());
+        System.out.println(diceTypeValue);
 
 
 
