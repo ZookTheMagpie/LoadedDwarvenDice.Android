@@ -34,6 +34,7 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
 
     Integer diceTypeValue;
 
+    static final Boolean DEBUG = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,11 +99,11 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
      * Bundles the dice type and amount
      * Sends the bundled information with the animated dice roll activity
      */
-    private void animatedDiceRollSelected()
-    {
+    private void animatedDiceRollSelected() {
         Intent intent = new Intent(DiceRoller.this, AnimatedDiceRoll.class);
         Bundle b = new Bundle();
-        b.putInt("DiceType", (Integer) animatedDiceTypeSpinner.getSelectedItem());
+
+        b.putInt("DiceType", Integer.parseInt(animatedDiceTypeSpinner.getSelectedItem().toString()));
         b.putInt("DiceAmount", animatedNumberOfDice.getValue());
 
         intent.putExtras(b);
@@ -117,9 +118,8 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
     private void diceResult() {
         int modifierValue = modifier.getValue();
         int numberOfDiceValue = numberOfDice.getValue();
-        Integer diceTypeValue = Integer.getInteger((String)diceTypeSpinner.getSelectedItem());
-        System.out.println(diceTypeValue);
-
+        String diceType = diceTypeSpinner.getSelectedItem().toString();
+        Integer diceTypeValue = Integer.parseInt(diceType);
 
 
         //Check if dice type is selected, if not send error message
@@ -138,8 +138,12 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
                         }
                     });
         } else {
+
             int currentResult = 0;
-            for (int i = 0; i <= numberOfDiceValue; i++) {
+            diceResult.setText("");
+
+            for (int i = 0; i < numberOfDiceValue; i++) {
+
                 if (plus.isChecked()) {
                     currentResult += rollDice(diceTypeValue) + modifierValue;
                 } else if (minus.isChecked()) {
@@ -152,8 +156,10 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
                 }
             }
             diceResult.setText(String.valueOf(currentResult));
+
         }
     }
+
 
     /**
      * Rolls a single dice of a specific type
@@ -165,6 +171,7 @@ public class DiceRoller extends AppCompatActivity implements AdapterView.OnItemS
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
             result = ThreadLocalRandom.current().nextInt(1, dice + 1);
         }
+
         return result;
     }
 

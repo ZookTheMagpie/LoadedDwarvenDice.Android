@@ -186,33 +186,7 @@
         app:layout_constraintStart_toEndOf="@+id/roll"
         app:layout_constraintTop_toBottomOf="@+id/resultTXT" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:layout_marginLeft="8dp"
-        android:checkedButton="@id/radioButtonPlus"
-        app:layout_constraintLeft_toRightOf="@+id/minusTXT"
-        app:layout_constraintTop_toBottomOf="@+id/modifierTXT"
-        tools:layout_editor_absoluteY="83dp">
 
-        <RadioButton
-            android:id="@+id/radioButtonMinus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:button="@android:drawable/radiobutton_off_background"
-            tools:layout_editor_absoluteX="258dp"
-            tools:layout_editor_absoluteY="105dp" />
-
-        <RadioButton
-            android:id="@+id/radioButtonPlus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:button="@android:drawable/radiobutton_off_background"
-            tools:layout_editor_absoluteX="258dp"
-            tools:layout_editor_absoluteY="85dp" />
-    </RadioGroup>
 
     <Button
         android:id="@+id/createNew"
@@ -244,7 +218,7 @@
         app:layout_constraintStart_toEndOf="@+id/animatedNumberOfDice"
         app:layout_constraintTop_toBottomOf="@+id/AnimatedNumberOfDiceTXT" />
 
-    <EditText
+    <TextView
         android:id="@+id/preMadeRollText"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
@@ -268,5 +242,36 @@
         android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@+id/spinnerCustomSelection"
         tools:layout_editor_absoluteX="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="8dp"
+        android:checkedButton="@id/radioButtonPlus"
+        android:listSelector="@android:color/transparent"
+        app:layout_constraintLeft_toRightOf="@+id/minusTXT"
+        app:layout_constraintTop_toBottomOf="@+id/modifierTXT"
+        tools:layout_editor_absoluteY="83dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonPlus"
+            android:background="@drawable/dice_roller_modifier_type"
+            android:listSelector="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="258dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMinus"
+            android:background="@drawable/dice_roller_modifier_type"
+            android:listSelector="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="258dp"
+            tools:layout_editor_absoluteY="105dp" />
+    </RadioGroup>
 
 </android.support.constraint.ConstraintLayout>
